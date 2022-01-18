@@ -7,3 +7,4 @@ aques es el tercer canvi
 cuarto cambio
 hace falta mas practica
 este cambio es desde internet
+mejorar el curriculum
