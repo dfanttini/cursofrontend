@@ -7,3 +7,4 @@ aques es el tercer canvi
 cuarto cambio
 seguir aprendiendo
 habriamos de hacer cambios aqui desde remoto
+este cambio fue en windows 10
