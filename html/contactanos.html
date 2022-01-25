@@ -25,6 +25,7 @@
                 <option value="NIE">NIE</option>
                 <option value="DNI">DNI</option>
                 <option value="PASS">Passport</option>
+<<<<<<< HEAD
                 <br><br>
                 <label for="company">Compañia</label>
                 <input type="text" id="company" name="company"><br><br>
@@ -50,10 +51,38 @@
                         <option value="Barcelona">
                         <option value="Cabrera de Mar">
                     </datalist>
+=======
+                <input type="text" id="NIE" name="NIE">
+            </select>
+            <br><br>
+            <label for="company">Compañia</label>
+            <input type="text" id="company" name="company"><br><br>
+            <label for="telefono">Telefono</label>
+            <input type="number" id="telefono" name="telefono" placeholder="123-45-678"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            <label for="correo">correo electrónico</label>
+            <input type="text" id="correo" name="correo" size="40" required><br><br>
+            <label for="Poblacion">Población</label>
+            <select name="poblacion" id="poblacion">
+                <option value="Barcelona">Barcelona</option>
+                <option value="Girona">Girona</option>
+                <option value="Tarragona">Tarragona</option>
+                <option value="Lerida">Lerida</option>
+            </select><br><br>
+            <Label for="Comarca">Comarca</Label>
+            <form">
+                <input list="comarca">
+                <datalist id="comarca">
+                    <option value="Abrera">
+                    <option value="Alella">
+                    <option value="Badalona">
+                    <option value="Barcelona">
+                    <option value="Cabrera de Mar">
+                </datalist>
+>>>>>>> 7cf52bad7976c82b6c8aee1b68e56010865bec0e
         </form>
         <p style="font-size: xx-large;"">Cantidad de empleados</p><br>
-                    <input type=" checkbox" id="val1" name="peque" value="peque">
-            <label for="val1">3 a 10</label>
+        <label for=" val1">3 a 10</label>
             <input type="checkbox" id="val2" name="startup" value="startup">
             <label for="val2">11 a 25</label>
             <input type="checkbox" id="val3" name="mediana" value="mediana">
@@ -76,10 +105,7 @@
         <p style="font-size: xx-large;">Agenda una cita con nuestro representante</p><br>
         <input type="date" id="calendar"><br><br>
         <input type="submit" id="send" name="Enviar" value="Enviar"><br><br>
-
         </form>
-
-
     </div>
 
 </body>
