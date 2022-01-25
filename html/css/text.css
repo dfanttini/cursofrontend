@@ -2,19 +2,23 @@ h1{
     color: forestgreen;
     text-align: center;
     border: 1px;
-    border-color: brown; 
+    border-color: brown;
+    font-size: 30px;
+    text-transform: capitalize; 
 }
 h2{
     color: rgb(190, 121, 31);
     text-align: center;
     border: 1px;
-    border-color: rgb(126, 16, 16);  
+    border-color: rgb(126, 16, 16);
+    text-transform: capitalize;  
 }
 h3{
     color: rgb(31, 126, 190);
     text-align: center;
     border: 1px;
-    border-color: rgb(110, 53, 53);  
+    border-color: rgb(110, 53, 53);
+    text-transform: capitalize;  
 }
 #novi{
     color: rgb(0, 195, 255);
