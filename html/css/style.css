@@ -43,3 +43,69 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+h1{
+  color: rgb(212, 224, 212);
+  text-align: center;
+  border: solid;
+  border-color: brown;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 30px;
+  text-transform: uppercase; 
+}
+h2{
+  color: rgb(190, 121, 31);
+  text-align: center;
+  border: dotted;
+  border-color: rgb(126, 16, 16);
+  padding: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-shadow: 1pt;
+  text-shadow: crimson;
+  background-color: cornflowerblue;
+  }
+h3{
+  color: rgb(31, 126, 190);
+  text-align: center;
+  border: 1px;
+  border-color: rgb(110, 53, 53);
+  text-transform: uppercase;
+  border: double;
+  border-left: 3px;
+  border-right: 3px;
+  padding: 15px;
+  border-radius: 15px;
+  
+}
+#novi{
+  color: rgb(0, 195, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;        
+}
+#novs{
+  color: rgb(247, 0, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
+.textint{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: justify;
+  text-decoration: aquamarine;
+  background-color: burlywood;
+  background-position: 5px;
+  margin: 50px;
+}
+p{
+  border-style: inset;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.big{
+  background-image: url( /fondo.jpg);
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
