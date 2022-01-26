@@ -1,0 +1,40 @@
+/*ejercicio circulo*/
+section {
+    border: 1 px solid;
+    }
+*{
+    align-content: center;
+}
+#exercici-1{
+    background-color: #f381fb;
+    padding: 40px;
+}
+
+.white {
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 200px;
+    display: inline-block;
+    background-color: white;
+    margin: 10px;
+}
+.red{
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 200px;
+    display: inline-block;
+    background-color: red;
+    margin: 10px;
+    box-shadow: 0 0 30px black;}
+#special.yellow{
+    width: 200px;
+    height: 200px;
+    border: 10px solid yellow;
+    border-radius: 200px;
+    display: inline-block;
+    background-color: rgb(124, 138, 3);
+    margin: 10px;    
+}
+
