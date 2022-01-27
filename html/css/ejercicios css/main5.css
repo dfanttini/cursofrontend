@@ -1,11 +1,72 @@
-.texto-encima{  
-    position: absolute;
-    top: 10px;
-    left: 10px;
+body{
+    font-family: 'Yantramanav', sans-serif;
 }
-.fondo{
-    position: relative;
-    display: inline-block;
-    text-align: center; 
+h1{
+    text-align: center;
+}
 
+section{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: auto;
+    text-align: center;
+}
+
+#sonetos{
+    background: pink;
+}
+
+#ejercicio5{
+    text-align: center;
+}
+
+#titulo{
+    text-align: center;
+
+}
+
+#ejercicio5 article{
+    border: 1px solid black;
+    margin-bottom: 0.3rem;    
+}
+
+.parte1{
+    background-image: url(./fondos/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #daa520;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.7;
+}
+.parte2{
+    background-image: url(./fondos/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2052da;
+    text-shadow: 1px 1px 3px #daa520;
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.parte3{
+    background-image: url(./fondos/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #daa520;
+    text-shadow: 1px 1px 3px black;
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.parte4{
+    background-image: url(./fondos/fondo4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #daa520;
+    text-shadow: 1px 1px 3px black;
+    
+    font-size: 1.2rem;
+    font-weight: 300;
 }

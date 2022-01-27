@@ -1,8 +1,9 @@
 body{
-    text-align: justify;
-    margin: auto;
+    margin-inline: 10px;
 }
-.verde{
+       
+     
+        .verde{
     color: green;
     text-decoration: underline;
 }
