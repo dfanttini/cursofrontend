@@ -64,9 +64,10 @@ p {
     border: 2px solid #9DD1F1;
     display: inline-block;
     height: 200px;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
-    width: 215px;   
+    width: 215px;
+    padding: 40px;   
   }
   .tarjeta2{
       border: 2px solid blue;
@@ -75,6 +76,7 @@ p {
       margin-top: 10px;
       text-align: center;
       width: 215px;
+      padding: 40px;
   }   
 
     
@@ -82,5 +84,7 @@ p {
         background-color: #004E89;
         border-color: #004E89;
       }
-
-    }
+      .tarjeta:hover { 
+        background-color: #004E89;
+        border-color: #004E89;
+      }
