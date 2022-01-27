@@ -5,3 +5,9 @@ li{
     display: inline-block;
     width: 400px;
 }
+.columna{
+    -moz-column-count: 2;
+    -moz-column-gap: 3em;
+    display: inline-block;
+    border: solid 1px black;
+   }
