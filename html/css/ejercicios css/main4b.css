@@ -1,3 +1,7 @@
+body{
+    text-align: justify;
+    margin: 100px;
+}
 .verde{
     color: green;
     text-decoration: underline;
@@ -5,7 +9,26 @@
 .red{
     color: red;
 }
-.arribabajo
-.big
-.blue
-.red2
+.arribabajo{
+    text-decoration-line: overline underline;
+    
+}
+.big{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.blue{
+    font-weight: bold;
+    color: blue;
+    font-size: x-large;
+}
+.red2{
+    font-weight: bold;
+    color: red;
+    font-size: x-large;
+    text-decoration: underline;
+}
+/*falta modificar estos parametros del enlace*/
+a:hover
+a:link
+a:visited

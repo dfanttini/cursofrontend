@@ -1,0 +1,11 @@
+.texto-encima{  
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.fondo{
+    position: relative;
+    display: inline-block;
+    text-align: center; 
+
+}
