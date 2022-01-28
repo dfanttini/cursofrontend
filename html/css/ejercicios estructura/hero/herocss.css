@@ -1,28 +1,73 @@
-#portada{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 90vh;
+#portada{        
     width: 100%;
-    border: 1px solid green;
+    height: 60vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    border: 2px solid blueviolet;
     position: relative;
     display: grid;
-
+    text-align: center;
+   
 }
 
-#portada::before {
-        content: "";
-        background-image: url();
-        position:absolute;
-        height: 90vh;
-        top: 0;
-        left: 0;
-        z-index: -5;
+#portada::before{
+    content: "";
+    background: url(/keila-hotzel-lFmuWU0tv4M-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    position: absolute;
+    
+}
+#portada2{
+    border: 3px dotted rebeccapurple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    text-align: right;
+    position:relative;
 }
 
-#portada:hover{
-    color: green;
+#portada2::before{
+    content: "";
+    background: url(/fondo.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-size: cover;
+    top: 5;
+    left: 10;
+    z-index: -4;
+    position: absolute;
 }
 
-.apa {
-    background-image: url(/fondo.jpg);
+#portada3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12;
+    border: 4px solid tomato;
+    position: relative;
+    display: grid;
+    text-align: justify;
+    width: 25%;
+    height: 50vh;
+}
+
+#portada3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(/ItsukishimaGateJapan-day.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    position: relative;
 }
