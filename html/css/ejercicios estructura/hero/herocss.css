@@ -27,6 +27,8 @@ h1{
     text-align: center;
     border-radius: 20pt;
     
+
+    
 }
 
 #portada::before{
@@ -41,6 +43,8 @@ h1{
     z-index: -5;
     position: absolute;
     border-radius: 20pt;
+    
+    
        
 }
 #portada2{
@@ -144,7 +148,7 @@ h1{
 
     .acciones a{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border: 1px solid rgb(69, 70, 69);
+        border: 3px solid rgb(69, 70, 69);
         border-radius: 5px;
         padding: 10px;
         background: rgb(36, 170, 231);
