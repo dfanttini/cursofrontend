@@ -1,4 +1,4 @@
-#portada {
+#portada{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     height: 90vh;
@@ -9,12 +9,20 @@
 
 }
 
-#portada::before{
+#portada::before {
         content: "";
-        background-image: url(/keila-hotzel-lFmuWU0tv4M-unsplash.jpg);
+        background-image: url();
         position:absolute;
         height: 90vh;
         top: 0;
         left: 0;
         z-index: -5;
+}
+
+#portada:hover{
+    color: green;
+}
+
+.apa {
+    background-image: url(/fondo.jpg);
 }
