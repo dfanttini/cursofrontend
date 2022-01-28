@@ -1,0 +1,21 @@
+#portada {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90vh;
+    width: 100%;
+    border: 1px solid green;
+    position: relative;
+    display: grid;
+    
+
+}
+
+#portada::before {
+    content: "";
+        background-image: url(/imagenhero.jpg);
+        position:absolute;
+        height: 90vh;
+        top: 0;
+        left: 0;
+        z-index: -5;
+}
