@@ -6,13 +6,12 @@
     border: 1px solid green;
     position: relative;
     display: grid;
-    
 
 }
 
-#portada::before {
-    content: "";
-        background-image: url(/imagenhero.jpg);
+#portada::before{
+        content: "";
+        background-image: url(/keila-hotzel-lFmuWU0tv4M-unsplash.jpg);
         position:absolute;
         height: 90vh;
         top: 0;
