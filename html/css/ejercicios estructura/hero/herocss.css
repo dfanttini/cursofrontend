@@ -1,16 +1,23 @@
 body{
     background: url(/shapelined-_JBKdviweXI-unsplash.jpg);
     background-size: cover;
-}
+    }
 
 section{
-    margin: 20px;
+    margin: 2px;
     border-radius: 20px;
     
 }
+
+h1{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: crimson;
+}
 #portada{        
     width: 100%;
-    height: 60vh;
+    height: 20vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-size: 15px;
@@ -28,11 +35,12 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 60vh;
+    height: 20vh;
     top: 0;
     left: 0;
     z-index: -5;
     position: absolute;
+    border-radius: 20pt;
        
 }
 #portada2{
@@ -40,12 +48,12 @@ section{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     width: 49%;
-    height: 100vh;
+    height: 20vh;
     display: inline-block;
     text-align: right;
     position:relative;
     padding: 20px;
-    
+    border-radius: 20pt;
 }
 
 #portada2::before{
@@ -59,7 +67,7 @@ section{
     left:0;
     z-index: -4;
     position: absolute;
-   
+    border-radius: 20pt;
 }
 
 #portada3{
@@ -70,9 +78,9 @@ section{
     display: inline-block;
     text-align: center;
     width: 50%;
-    height: 50vh;
+    height: 20vh;
     float: right;
-    
+    border-radius: 20pt;
 }
 
 #portada3::before{
@@ -86,6 +94,7 @@ section{
     left: 0;
     z-index: -6;
     position: absolute;
+    border-radius: 20pt;
        
 }
 
@@ -97,10 +106,10 @@ section{
     display: inline-block;
     text-align: center;
     width: 50%;
-    height: 50vh;
+    height: 20vh;
     float: right;
-    padding: 40px;
-    
+    padding: 60px;
+    border-radius: 20pt;
 }
 
 #portada4::before{
@@ -115,12 +124,59 @@ section{
     z-index: -6;
     position: absolute;
     opacity: 0.5;
+    border-radius: 20pt;
 }
 
-.boton{
+#boton{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1 px solid green;
+    border: 1px solid rgb(17, 37, 17);
     border-radius: 5px;
     padding: 10px;
     background: rgb(36, 170, 231);
+    width: 200px;
+    margin: 5px;
+    }
+
+.acciones{
+    text-align: left;
+    margin-top: 20px;
+}
+
+    .acciones a{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid rgb(69, 70, 69);
+        border-radius: 5px;
+        padding: 10px;
+        background: rgb(36, 170, 231);
+        width: 200px;
+        margin: 5px;
+        text-decoration: none;   
+    }
+.acciones2{
+    padding: 5px;
+    text-align: center;
+    
+}
+li::marker{
+    position: absolute;
+    
+}
+
+.acciones2 li{
+    
+    border: 1px solid rgb(69, 70, 69);
+    border-radius: 5px;
+    background: rgb(36, 170, 231);
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    
+    padding: 10px;
+}
+
+ul{
+    list-style-image: url(/flecha.png);
+    font-family: cursive;
+    position: relative;
 }
