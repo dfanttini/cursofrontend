@@ -1,0 +1,87 @@
+#ele1{background-image: url(/ItsukishimaGateJapan-day.png);
+background-size: cover;}
+
+#ele2{
+    background-image: url(/img/dispmovil/dispositivos_moviles.jpg);
+    background-size: contain;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 50px 50px 50px;
+    gap: 10px;
+}
+
+.container div{
+    background: wheat;
+    padding: 1em;
+    
+    }
+
+.container div:hover{
+    border: 1px solid yellow;
+    background-image: url(/fondo.jpg);
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+   column-gap: 0.5em;
+    margin: 20px;
+}
+
+.container2 div{
+    background-color: tomato;
+    padding: 1.5em
+}
+
+.container2 div:hover{
+    border: 3px dotted blue;
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    margin: 15px;
+    row-gap: 1.2em;
+}
+
+.container3 div{
+    background-color: rgb(99, 91, 89);
+    padding: 2em
+}
+
+.container3 div:hover{
+    border: 3px dotted rgb(12, 12, 29);
+}
+
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr ;
+    row-gap: 0.2em;
+    
+
+}
+
+.container4 div{
+    background-color: cadetblue;
+    padding: 1em;
+    
+
+}
+
+.container4 div:hover{
+    border: 8px brown solid;
+    background-image: url(/ItsukishimaGateJapan-day.png);
+    background-size: cover;
+}
+
+.negro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.negro div{
+    background-image: url(/shapelined-_JBKdviweXI-unsplash.jpg);
+    
+}
