@@ -79,9 +79,11 @@ background-size: cover;}
 .negro{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
 }
 
-.negro div{
+.negro > div{
     background-image: url(/shapelined-_JBKdviweXI-unsplash.jpg);
+    border: 1px solid black;
     
 }

@@ -156,9 +156,23 @@ h1{
         margin: 5px;
         text-decoration: none;   
     }
+
+    a{
+        background-color: yellow;
+        transition: bacground-color .5s;
+
+    }
+
+    a:hover{
+        background-color: gold;
+    }
+
+
+
+
 .acciones2{
     padding: 5px;
-    text-align: center;
+  
     
 }
 li::marker{
@@ -172,9 +186,9 @@ li::marker{
     border-radius: 5px;
     background: rgb(36, 170, 231);
     width: 300px;
-    height: 50px;
+    padding: 20px;
     margin: 10px;
-    text-align: right;
+   
    
        
 }
@@ -186,7 +200,74 @@ li{
 ul{
     list-style-image: url(/flecha.png);
     font-family: cursive;
-    position: relative;
-    vertical-align: baseline;
+    object-position: unset;
+    vertical-align: center;
     
 }
+
+img{
+    width: 10%;
+    height: auto;
+    border-radius: 30rem;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 10px;
+
+    
+   
+}
+
+div{
+    column-count: 1;
+    -moz-column-count: 1;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+#ele{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: 2px solid blue;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 23%;
+}
+
+
+#ele2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1,2rem;
+    border: 2px solid blue;
+    margin: 0x;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+}
+
+#ele3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    border: 4px solid rgb(78, 41, 7);
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    width: 44%;
+   height: 70px;
+}
+
+#condiv{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    border: 1px dotted red;
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    width: 300px;
+    display: block;
+}
+
