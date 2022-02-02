@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrar caixes</title>
+    <style>
+    .caja1{
+        border: 3px solid black;
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+
+    .caja2{
+        content: "";
+        border: 3px solid black;
+        width: 50%;
+        display: grid;
+        margin: auto;
+    }
+    
+    .caja3{
+       
+        border: 3px solid rgb(51, 236, 26);
+        width: 30%;
+        text-align: left;
+        position: absolute;
+        margin: auto;
+        left: 69%;
+        right: 0px;
+                      
+    }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="caja1">
+        <p>Caja de ancho 100%</p>
+        <p>Contenedor alineado a la izquierda, contenido alineado a la izquierda</p>
+        <p>aqui puede ir cualquier tipo de contenido, imagenes texto y lo que deseemos.</p>
+    </div>
+    <div class="caja2">
+        <p>Caja de ancho 50%</p>
+        <p>Contenedor centrado contenido alineado a la derecha</p>
+    </div>
+    <div class="caja3">
+        <p>Caja de ancho 30%</p>
+        <p>Contenedor alineado derecha, contenido alineado a la izquierda</p>
+    </div>
+    
+</body>
+</html>

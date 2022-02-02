@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<style>
+    body{
+        background-image: url(/fondo.jpg);
+    }
+
+    .inline{
+        border: 3px solid #000;
+        background-color: #fff;
+        padding: 20px;
+        display: inline;
+        margin: 10px;
+    }
+
+    .block{
+        border: 3px solid #000;
+        background-color: #fff;
+        padding: 20px;
+        display: block;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .inline-block{
+        border: 3px solid #000;
+        background-color: #fff;
+        padding: 20px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+
+</style>
+<body>
+
+    <h1>Inline (horizontal padding works, vertical does not. horizontal margins</h1>
+    <div>
+        <div class="inline"></div>
+        <div class="inline"></div>
+        <div class="inline"></div>
+    </div>
+    <h1>block</h1>
+    <div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+    <h1>inline Block</h1>
+    <div>
+        <div class="inline-block"></div>
+        <div class="inline-block"></div>
+        <div class="inline-block"></div>
+    </div>
+    
+</body>
+</html>

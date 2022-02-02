@@ -6,17 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./mainestructura1.css">
     <title>Ejercicio estructura 1</title>
+    <style>
+        section{
+            content: "";
+            border: 2px solid blue;
+            width: 90%;
+            float: left;
+                 
+           
+        }
+
+        .aba {
+            clear: both;            
+        }
+        
+        .li2{
+            float: right ;
+            height: 150px;
+            margin: 50px;
+        }
+
+        .li1{
+            float: left ;
+            height: 150px;
+            margin: 50px;
+        }
+        img{
+            width: 100px;
+            height: 200px;
+            
+        }
+    </style>
 </head>
 <body>
     <section>
-        <ol>
-            <li>Contenido de la primera columna.</li>
-            <li>Contenido de la segunda columna.</li>
+        <ol><img src="/fondo.jpg" alt="">
+            <li class="li1">Contenido de la primera columna.</li>
+            <li class="li2">Contenido de la segunda columna.</li>
         </ol>
     </section>
-    <section>
-        <div class="columna">Contenido de la primera columna</div>
-        <div class="columna">Contenido de la segunda columna.</div>
-    </section>
+    <div class="aba">
+        <div class="columna">Contenido de la primera columna con div</div>
+        <div class="columna">Contenido de la segunda columna con div.</div>
+    </div
 </body>
 </html>
