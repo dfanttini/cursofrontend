@@ -17,3 +17,44 @@
     vertical-align: middle;
     
 }
+
+.container{
+    display: flex;
+    background-color: yellow;
+    width: 100%;
+    flex-flow: row;
+}
+
+.item{
+    background-color: blue;
+    padding: 2rem;
+    margin: 0.2rem;
+    font-size: 1em;
+    font-weight: bold;
+    width: 250px;
+}
+
+.item1{
+    order: 2;
+   
+}
+
+.item5{
+    order: 1;
+    
+}
+
+.item3{
+    order: 5;
+    
+}
+
+.item4{
+    order: 3;
+    
+}
+
+.item1{
+    order: 4;
+    
+}
