@@ -2,7 +2,7 @@
     margin: 1px;
     padding: 1px;
     box-sizing: border-box;
-
+    font-family: Spartan;
 }
 
 body{
@@ -10,163 +10,211 @@ body{
 background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2321b0ac' fill-opacity='0.23'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.padre{
-    display: flex;
-    flex-flow: column nowrap;
-    max-width: 1200px;
-    min-width: 320px;
+/*Asuntos generales como botones y otras cosas*/
+
+
+a{
+    color: rgb(206, 91, 14);
+    text-decoration: none;
 }
+
+ul{
+    list-style: none;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline;
+    border: 1px white solid;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: small;
+    background: cornflowerblue;
+    border-radius: 7px;
+        
+
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*Aqui empiezan las cajas*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin: auto;
+}
+
     .header{
-    background: #000;
-    
-    
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
     }
-        .menu{
-            background: #f8f8f5;
+
+        .nav-main{
+            background: coral;
             display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-                    
-                      
-            }
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: start;
+            
+                        
+        }
 
-            .logo{
-                background: #1A5F7A;
-                width: 40px;
-                height: 40px;
-                background-repeat: no-repeat;
-                
-            }
-
-            .nav{
-                background: #1A5F7A;
-                flex: 3 1 auto;
-                height: 40px;
-                margin: 0 auto;
-                text-align: center;
-                text-decoration: none;
+            .nav-brand{
+                display: flex;
+                background: rgb(202, 221, 221);
+                width: 70px;
+                flex: 1 1 auto;
                               
                 
             }
 
-            .nav li {
-                text-decoration: none;
-                
+            .nav-menu{
+                display: flex;
+                background: rgb(126, 173, 216);
+                flex: 5 1 auto;
+                justify-content: space-around;
+                align-items: center;
             }
-            .nav:hover{
-                background: #FFF89A;
-                color: darkcyan;
                 
+            .right-menu{
+                display: flex;
+                background-color: cyan;
+                flex: 1 1 auto;
+                align-items: center;
+                justify-content: space-around;
             }
 
-            .social{
-                background:  #1A5F7A;
-                flex: 1 1 auto;
-                height: 40px;
+        .portada{
+            margin-top: 10px;
+            width: 100%;
+            height: 450px;
+            background-image: url(/css/botiga/img/concert.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            color: #fff;
+            text-shadow: 3px 2px 5px black;
+            margin-bottom: 10px;
+            border-radius: 4px;
+
+        }
+    .section{
+        background: #000;
+        display: flex;
+    }
+        .articulos{
+            background: darkmagenta;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+           
+            }
+            
+            .article{
+                background:darkgray;
+                flex: 1 1 20%;
+                padding: 5px;
+            }
+
+            .articulos img {
+                width: 90%;
+                height: 170px;
+                margin-top: 10px;
+                border-radius: 25px;
+                border: 1px solid #fff;
+                        
+            }
+
+             .article h3{
+                font-size: 15px;
+                text-align: center;
+                color: rgb(206, 91, 14);
+                margin: 10px 0px;
+            }
+
+            .article p {
+                font-size: 12px;
+                text-align: center;
+                color: rgb(206, 91, 14);
+                margin: 8px 0px;
+                min-height: 50px;
                 
-                font-size: 20px;
-                align-items: flex-end;
+            }
+    
+            .article h4{
+                font-weight: 200;
+                font-size: smaller;
+                text-shadow: 3px 2px 5px darkslateblue;
+                text-align: center;
+                margin: 10px 10px;
+                color: rgb(206, 91, 14);
+            }
+
+            .article a{
+                display: flex;
                 justify-content: center;
             }
 
-            .texto-principal{
-                background:  #FFC900;
-                background: url(/css/flexbox/pexels-evie-shaffer-2512281.jpg);
-                background-size: cover;
-                height: 300px;
-            }
-            
-        h1{
-          display: flex;
-          justify-content: center;
-          margin: auto;
-          text-align: center;
-          
-            
-        }
-    .section{
-    background: #000;
-    display: flex;
-    }
-        .articulos{
-                background: #655D8A;
-                flex: 2 1 auto;
-                display: flex;
-                flex-flow: row wrap;
-                display: flex;
-                    }
-
-            .article{
-                background: #C1DEAE;
-                flex: 1 1 40%;
-                width: auto;
-                
-                
-            }
-
             .navegacion{
-                background: #315bd1;
-                flex: 1 1 100%;
-            }
-
-        .aside{
-                background: #D96098;
+                display: flex;
+                background: rgb(126, 173, 216);
                 flex: 1 1 auto;
+                justify-content: space-around;
+                align-items: center;
             }
-                
-                .publicidad{
-                    background: #96CEB4;
-                }
-    .footer{
-    background: #000;
-    display: flex;
-    justify-content: center;
-    }
-        .pie{
-            background: #C6D57E;
-            width: 350px;
-        }
-@media all and (max-width: 800px){
-    .section{
-        flex-direction: column;
-        
-    }
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
 
-    .aside{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+            #epocas ul{
+                 flex: 1 1 auto;
+                justify-content: space-around;
+                align-items: center;
+            }
 
-}
-
-@media all and (max-width: 400px) {
-    .articulos{
-        display: flex;
-        flex-direction: column;
-        flex-flow: column;      
-            
-    }
-
-    .menu{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        
+            #epocas li{
+                display: inline;
                
                 
-      }   
-    
-    .nav{
+            }
+            
+
+        .aside{
+            background: crimson;
+            flex: 1 1 auto;
+        }
+
+            .publicidad{
+
+            }
+
+            .publicidad img {
+                width: 95%;
+                height: 350px;
+                justify-content: center;
+                margin: 10px;
+
+            }
+
+    .footer{
+        background: #000;
         display: flex;
-        flex-basis: 200px;
-        
+        justify-content: center;
     }
-    
-}
-    
+        .pie{
+            background: cornsilk;
+            width: 300px;
+        }
+
