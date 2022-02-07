@@ -36,6 +36,11 @@ ul{
 
 }
 
+.btn:hover{
+    background-color: rgb(134, 238, 134);
+    color: rgb(206, 91, 14);
+}
+
 ul{
     list-style: none;
 }
@@ -52,7 +57,7 @@ ul{
 }
 
     .header{
-        background: #000;
+        background: none;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -60,7 +65,7 @@ ul{
     }
 
         .nav-main{
-            background: coral;
+            background: none;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -69,6 +74,7 @@ ul{
                         
         }
 
+        
             .nav-brand{
                 display: flex;
                 background: rgb(202, 221, 221);
@@ -80,19 +86,30 @@ ul{
 
             .nav-menu{
                 display: flex;
-                background: rgb(126, 173, 216);
+                /*background: rgb(126, 173, 216);*/
                 flex: 5 1 auto;
                 justify-content: space-around;
                 align-items: center;
             }
-                
+            
+            .nav-menu a:hover{
+                border-bottom: 2px solid rgb(83, 56, 56);
+                    
+    }
+
             .right-menu{
                 display: flex;
-                background-color: cyan;
+                /*background-color: cyan;*/
                 flex: 1 1 auto;
                 align-items: center;
                 justify-content: space-around;
+                font-size: 1.5rem;  
             }
+
+            .right-menu a:hover{
+                color: rgb(34, 179, 89);
+                font-size: 1.5rem;    
+    }
 
         .portada{
             margin-top: 10px;
@@ -113,11 +130,13 @@ ul{
 
         }
     .section{
-        background: #000;
+        /*background: #000;*/
         display: flex;
+        
     }
+
         .articulos{
-            background: darkmagenta;
+            /*background: darkmagenta;*/
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
@@ -126,7 +145,7 @@ ul{
             }
             
             .article{
-                background:darkgray;
+                /*background:darkgray;*/
                 flex: 1 1 20%;
                 padding: 5px;
             }
@@ -163,6 +182,7 @@ ul{
                 text-align: center;
                 margin: 10px 10px;
                 color: rgb(206, 91, 14);
+                
             }
 
             .article a{
@@ -173,26 +193,28 @@ ul{
             .navegacion{
                 display: flex;
                 background: rgb(126, 173, 216);
-                flex: 1 1 auto;
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: nowrap;
                 justify-content: space-around;
-                align-items: center;
             }
 
             #epocas ul{
-                 flex: 1 1 auto;
-                justify-content: space-around;
-                align-items: center;
+                display: flex;
+                width: 100%;
+                                
             }
 
             #epocas li{
                 display: inline;
-               
+                
+                
                 
             }
             
 
         .aside{
-            background: crimson;
+            /*background: crimson;*/
             flex: 1 1 auto;
         }
 
@@ -209,12 +231,208 @@ ul{
             }
 
     .footer{
-        background: #000;
+        /*background: #000;*/
         display: flex;
-        justify-content: center;
-    }
-        .pie{
-            background: cornsilk;
-            width: 300px;
+            
+        }
+        .footer-container{
+            font-size: smaller;
+            /*background: cornsilk;*/
+            width: 99%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
+        .footer-container ul li{
+            display: flex;
+            padding: 5px;
+            margin: 5px;
+            
+        }
+
+        .footer-container li p{
+            color: rgb(206, 91, 14);
+        }
+
+        .footer-container img{
+            width: 90%;
+            height: 80px;
+        }
+
+        .footer-container li a h4:hover {
+            color: #99cccc;
+        }
+
+        .footer-container li a p:hover {
+            color: #99cccc;
+        }
+
+        .infocookies p{            
+            font-size: smaller;
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        .infocookies p a{
+            color: blue;
+        }
+
+        .infocookies p a:hover{
+            border-bottom: rgb(219, 155, 35);
+        }
+
+@media all and (max-width: 800px){
+            /*body{
+                background-color: chartreuse;
+            }*/
+            
+            .section{
+                flex-direction: column;
+            }
+
+            .nav-main{
+                flex-direction: column;
+                height: auto;
+            }
+
+            .nav-menu{
+                padding-top: 10px;
+                display: flex;
+                width: 60%;
+            }
+            
+            .right-menu{
+                width: 60%;
+            }
+            .right-menu a i{ 
+                display: flex;
+                margin-top: 5px;
+                justify-content: space-around;
+                
+
+            }
+
+            .aside{
+                 display: flex;
+                 width: 60%;
+
+            }
+
+            .articulos{
+                flex-direction: row;
+                width: 65%;
+            }
+
+            .articulos img{
+                width: 90%;
+                height: 150px;
+            }
+
+            .portada{
+                width: 65%;
+            }
+        }
+        
+        .footer{
+            font-size: 15px;
+            display: flex;
+            width: 67%;
+        }
+
+        .infocookies{
+            font-size: 10px;
+        }
+
+@media all and (max-width: 400px){
+            /*body{
+                background-color: chartreuse;
+            }*/
+            .section{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+               
+
+            }
+
+            .nav-main{
+                flex-direction: column;
+                height: auto;
+            }
+
+            .nav-menu{
+                padding-top: 5px;
+                display: flex;
+                font-size: smaller;
+                width: 30%;
+                justify-content: space-between;
+            }
+            
+            .right-menu{
+                width: 30%;
+                display: flex;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+            .right-menu a i{ 
+                display: flex;
+            }
+
+            .aside{
+                display: flex;
+                width: 30%;
+
+            }
+
+            .articulos{
+                display: flex;
+                flex-direction: row;
+                width: 25%;                                
+            }
+            
+            .articulos h3{
+                min-height: 50px;
+            }
+
+            .articulos img{
+                width: 99%;
+                height: 130px;
+            }
+
+
+            .portada{
+                display: flex;
+                width: 32%;
+                text-align: center;
+                background-image: url(/css/botiga/img/concert.jpg);
+                background-size: contain;
+                height: 200px;
+            }
+            .portada h1{
+                display: flex;
+                justify-content: center;
+                font-size: smaller;
+            }
+
+            .publicidad img{
+                width: 100%;
+                height: 190px;
+            }
+
+            .footer-container{
+                display: flex;
+                width: 25%;
+              
+                align-items: stretch;
+                
+            }
+
+            .footer-container img{
+                width: 35%;
+                height: 60px;
+            }
+
+            
+           
+}
