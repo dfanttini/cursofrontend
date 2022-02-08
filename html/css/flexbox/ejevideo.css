@@ -1,6 +1,6 @@
 *{
-    margin: 1px;
-    padding: 1px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: Spartan;
 }
@@ -22,7 +22,12 @@ ul{
     list-style: none;
 }
 
-.btn {
+/*probar con el img max width para las imagenes*/
+/*ver en que partes debo de utilizar flex solo*/
+/*pasar a column el footer*/
+/*acuerdate de utiliar la etiqueta span*/
+
+/*.btn {
     cursor: pointer;
     display: inline;
     border: 1px white solid;
@@ -34,7 +39,7 @@ ul{
     border-radius: 7px;
         
 
-}
+}*/
 
 .btn:hover{
     background-color: rgb(134, 238, 134);
@@ -56,33 +61,26 @@ ul{
     margin: auto;
 }
 
-    .header{
-        background: none;
+    .header{        
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        
+        flex-wrap: nowrap;        
     }
 
-        .nav-main{
-            background: none;
+        .nav-main{            
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: start;
-            
-                        
-        }
-
+            justify-content: start;         
+            }
         
             .nav-brand{
                 display: flex;
-                background: rgb(202, 221, 221);
+                background: rgb(247, 245, 242);
                 width: 70px;
                 flex: 1 1 auto;
-                              
-                
-            }
+                align-self: auto;
+                }
 
             .nav-menu{
                 display: flex;
@@ -101,8 +99,8 @@ ul{
                 display: flex;
                 /*background-color: cyan;*/
                 flex: 1 1 auto;
-                align-items: center;
                 justify-content: space-around;
+                align-items: center;
                 font-size: 1.5rem;  
             }
 
@@ -125,10 +123,10 @@ ul{
             justify-content: end;
             color: #fff;
             text-shadow: 3px 2px 5px black;
-            margin-bottom: 10px;
+            margin-bottom: 2px;
             border-radius: 4px;
-
         }
+
     .section{
         /*background: #000;*/
         display: flex;
@@ -144,45 +142,39 @@ ul{
            
             }
             
+        .articulos img {
+            width: 100%;
+            
+            margin-top: 1px;
+            border-radius: 25px;
+            border: 1px solid #fff;
+        }
+                
             .article{
-                /*background:darkgray;*/
-                flex: 1 1 20%;
-                padding: 5px;
+            /*background:darkgray;*/
+            flex: 1 1 23%;
+            padding: 5px;
+            color: rgb(206, 91, 14);
+            margin: 8px 0px;
             }
 
-            .articulos img {
-                width: 90%;
-                height: 170px;
-                margin-top: 10px;
-                border-radius: 25px;
-                border: 1px solid #fff;
-                        
-            }
+            /*crear un article con valores del 40% en medias*/
+            
+        
 
-             .article h3{
-                font-size: 15px;
-                text-align: center;
-                color: rgb(206, 91, 14);
-                margin: 10px 0px;
+            .article h3{
+                font-size: 15px;                              
             }
 
             .article p {
-                font-size: 12px;
-                text-align: center;
-                color: rgb(206, 91, 14);
-                margin: 8px 0px;
-                min-height: 50px;
-                
+                font-size: 12px;                
+                min-height: 50px;   
             }
     
             .article h4{
                 font-weight: 200;
                 font-size: smaller;
-                text-shadow: 3px 2px 5px darkslateblue;
-                text-align: center;
-                margin: 10px 10px;
-                color: rgb(206, 91, 14);
-                
+                text-shadow: 3px 2px 5px darkslateblue;                
             }
 
             .article a{
@@ -207,64 +199,64 @@ ul{
 
             #epocas li{
                 display: inline;
-                
-                
-                
             }
-            
 
         .aside{
             /*background: crimson;*/
             flex: 1 1 auto;
+            width: 100%;
         }
-
-            .publicidad{
-
-            }
 
             .publicidad img {
                 width: 95%;
                 height: 350px;
                 justify-content: center;
                 margin: 10px;
+                border-radius: 5px;
 
             }
 
-    .footer{
-        /*background: #000;*/
+    .footer-container{
+        background: #000;
         display: flex;
+        width: 100%;
+        flex: 1 1 auto;
+        
             
         }
-        .footer-container{
-            font-size: smaller;
-            /*background: cornsilk;*/
-            width: 99%;
+        .footer{
+            background: cornsilk;
+            width: 100%;
+            flex-grow: 1;
             display: flex;
-            flex-direction: row;
+            flex-wrap: nowrap;
             justify-content: space-between;
+            color: rgb(206, 91, 14);
+                        
         }
 
-        .footer-container ul li{
+        .footer ul li{
             display: flex;
             padding: 5px;
             margin: 5px;
+            font-size: 12px;
             
         }
 
-        .footer-container li p{
-            color: rgb(206, 91, 14);
+        .footer li p{
+            /*color: rgb(206, 91, 14);*/
         }
 
-        .footer-container img{
+        .footer img{
             width: 90%;
             height: 80px;
         }
 
-        .footer-container li a h4:hover {
+        .footer li a h4:hover {
             color: #99cccc;
         }
 
-        .footer-container li a p:hover {
+        .footer li a p:hover {
             color: #99cccc;
         }
 
@@ -283,156 +275,24 @@ ul{
         }
 
 @media all and (max-width: 800px){
-            /*body{
-                background-color: chartreuse;
-            }*/
-            
-            .section{
-                flex-direction: column;
-            }
-
-            .nav-main{
-                flex-direction: column;
-                height: auto;
-            }
-
-            .nav-menu{
-                padding-top: 10px;
-                display: flex;
-                width: 60%;
-            }
-            
-            .right-menu{
-                width: 60%;
-            }
-            .right-menu a i{ 
-                display: flex;
-                margin-top: 5px;
-                justify-content: space-around;
-                
-
-            }
-
-            .aside{
-                 display: flex;
-                 width: 60%;
-
-            }
-
-            .articulos{
-                flex-direction: row;
-                width: 65%;
-            }
-
-            .articulos img{
-                width: 90%;
-                height: 150px;
-            }
-
-            .portada{
-                width: 65%;
-            }
-        }
-        
-        .footer{
-            font-size: 15px;
-            display: flex;
-            width: 67%;
-        }
-
-        .infocookies{
-            font-size: 10px;
-        }
-
-@media all and (max-width: 400px){
-            /*body{
-                background-color: chartreuse;
-            }*/
-            .section{
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-               
-
-            }
-
-            .nav-main{
-                flex-direction: column;
-                height: auto;
-            }
-
-            .nav-menu{
-                padding-top: 5px;
-                display: flex;
-                font-size: smaller;
-                width: 30%;
-                justify-content: space-between;
-            }
-            
-            .right-menu{
-                width: 30%;
-                display: flex;
-                align-items: flex-start;
-                align-content: flex-start;
-            }
-            .right-menu a i{ 
-                display: flex;
-            }
-
-            .aside{
-                display: flex;
-                width: 30%;
-
-            }
-
-            .articulos{
-                display: flex;
-                flex-direction: row;
-                width: 25%;                                
-            }
-            
-            .articulos h3{
-                min-height: 50px;
-            }
-
-            .articulos img{
-                width: 99%;
-                height: 130px;
-            }
+            *body{
+                            background-color: chartreuse;
+                        }
+                        
+                        .articulos{
+                            flex: 2 1 90%;
+                            }
+                           
+                            .section{
+                                
+                                flex-direction: column;
+                            }
+                            .aside{
+                                flex-direction: row;
+                            }
 
 
-            .portada{
-                display: flex;
-                width: 32%;
-                text-align: center;
-                background-image: url(/css/botiga/img/concert.jpg);
-                background-size: contain;
-                height: 200px;
-            }
-            .portada h1{
-                display: flex;
-                justify-content: center;
-                font-size: smaller;
-            }
 
-            .publicidad img{
-                width: 100%;
-                height: 190px;
-            }
-
-            .footer-container{
-                display: flex;
-                width: 25%;
-              
-                align-items: stretch;
-                
-            }
-
-            .footer-container img{
-                width: 35%;
-                height: 60px;
-            }
-
-            
-           
 }
+            
+ 
