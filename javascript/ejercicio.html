@@ -9,7 +9,16 @@
 </head>
 <body>
     <script>
-        document.write("<h1>Hola</h1>")
+        var requiredNum= prompt("Introduce un numero");
+        //Parse the number
+        let total=requiredNum * 2;
+        //parseInt requiredNum
+        //Check si el contenido de la variable es o no un numero
+        if (!isNaN(requiredNum)){
+            window.alert("\"" + requiredNum + "\"" + "is a number")
+        } else {
+            window.alert("\"" + requiredNum + "\"" + "is not a number")
+        }
     </script>
 </body>
 </html>

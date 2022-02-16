@@ -8,18 +8,17 @@
     <script src="/ejercicio3.js"></script>
 </head>
 <body>
-    <script>
-        document.write("<h1>Hola tercer ejercicio</h1>")
-    </script>
-    <script>
-       var dato_a_comprobar= "1234";
-       var valoresAceptados= /^[0-9]+$/;
-       if (dato.match(valoresAceptados)){
-           alert ("Es numérico");
-               }
-               else{
-                ("no es númerico");
-               }
-    </script>
+       <script>
+            var requiredNum = prompt("introduce cualquier numero");
+            let total=requiredNum * 2;
+            
+            if (!isNaN(requiredNum)){
+                window.alert("\"" + requiredNum + "\"" + "is a number")
+            } else {
+                window.alert("\"" + requiredNum + "\"" + "is not a number")
+            }
+       </script>
+           
+
 </body>
 </html>
