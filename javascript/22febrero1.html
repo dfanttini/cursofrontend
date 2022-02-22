@@ -71,12 +71,21 @@
             case 8:
             case 7:
                 calificacion = "Notable";
-            case 8:
-            case 8:
-            case 8:
-            case 8:
-            case 8:
-            case 8:
+                break;
+            case 6:
+            case 5:
+                calificacion = "Suficiente";
+                break;
+            case 4:
+            case 3:
+                calificacion = "No suficiente";
+                break;
+            case 3:
+            case 2:
+            case 1:
+            case 0:
+                calificacion = "Insuficiente";          
+            
 
         }
 
@@ -91,6 +100,8 @@
         } else {
             console.log('No puedes pagar, eres un pobreton')
         }
+
+        
 
 
         
