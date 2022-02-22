@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mexicanFood= "burritos";
+        mexicanFood= "enchiladas";
+        mexicanFood= "gorditas";
+        console.log(mexicanFood);
+
+        let g= 4;
+        g= g + 2;
+        console.log(g);
+
+        let x= 1235;
+        x = x - 1551;
+        console.log(x);
+
+        let y= 1425;
+        y= y / 12;
+        console.log(y);
+
+        let z= 889;
+        z= z + 1;
+        z= z - 150;
+        z= z * 10;
+        console.log(z);
+
+        let t= 777;
+        t -= 111;
+        console.log(t);
+        let u= 844;
+        u *= 2;
+        u /= 10;
+        console.log(u);
+
+        let q= 52;
+        q++;
+        q--;
+        console.log(q);
+
+        let misPerros = 'pinky max y luneta';
+        console.log('En México yo tengo perros ' + misPerros + ' son maleducados.');
+
+        let misAmigos = 'Claudio, Juan Carlos, Vaquero e Isaac';
+        console.log('En Iztapalapa yo tengo los siguientes amigos: ' + misAmigos + ' todos somos banda.');
+
+        let tengoMastcota = 'Pinky';
+        console.log(`tengo una mascota ${tengoMastcota}.`);
+
+        let miNombre = 'Dorian';
+        let miCiudad = 'Barcelona';
+        console.log(`Mi nombre es ${miNombre} Mi ciudad favorita es ${miCiudad}.`);
+
+        let miEdad = 47;
+        let hobby = 'escuchar música';
+        let study = 'programacion';
+        console.log(`Mi edad es de ${miEdad} Me gusta ${hobby} y también ${study}.`);
+
+        let variableUno = 'esto es texto';
+        variableUno = 77;
+        console.log(typeof variableUno);
+
+        let variableDos = 'prueba con texto';
+        console.log(typeof variableDos);
+
+        let variableTres = 1111;
+        console.log(typeof variableTres);
+
+        const junior = 150;
+        const senior = junior * 1.5;
+        let chief = senior * (4/3) + 15;
+        chief = Math.ceil(chief);
+        console.log(`si un junior es modificado ${chief} entonces este es el resultado`);
+
+        //lo mismo hice cambiando fahrenheit y cambiando la ecuacion
+        const kelvin = 293;
+        const celsius = kelvin - 273;
+        let newton = celsius * (33/100);
+        newton = Math.floor(newton);
+        console.log(`la temperatura en newton ${newton} seria este valor.`);
+        //esta es la solucion a la que llegue yo solito y mi mami no me ayudó.
+        let edadMenos2 = 47 - 45;
+        let twoYears = edadMenos2 * 10.5;
+        let restoEdad = 47 - edadMenos2;
+        let edadPorcuatro = restoEdad * 4;
+        let edadPerro = edadPorcuatro + twoYears;
+        console.log(edadPerro);
+        
+        //esta es la solucion de la pagina
+        let myAge = 39;
+        //primeros años
+        let earlyYears = 2;
+        earlyYears *= 10.5;
+        //aqui sustraigo los dos años
+        laterYears = myAge - 2;
+        laterYears *=4;
+        console.log(earlyYears + laterYears);
+        let myageInDogYears = earlyYears + laterYears;
+        let myName = 'Dorian';
+        'Dorian'.toLowerCase();
+        console.log(`My name is ${myName}. I am human age ${myAge} years old in human years which is ${myageInDogYears} years old in dog years.`);
+
+        if (true) {
+            console.log('Este mensaje se imprimira en pantalla');
+        }
+
+        let sale = true;
+
+        sale = false;
+
+        if (sale) {
+            console.log('Tiempo de comprar!');
+        } else {
+            console.log('Nada de gastar lana.');
+        }
+
+        let hungerLevel = 8;
+        if (hungerLevel > 7) {
+            console.log('Es tiempo de comer!!');
+        } else { 
+            console.log('Puedo aguantarme un rato');
+        }
+
+        let excited = true;
+        console.log(!excited);
+        let sleepy = false;
+        console.log(!sleepy);
+
+        let modo = 'somnoliento';
+        let nivelCansancio = 4;
+        if (modo === 'somnoliento' && nivelCansancio > 8) {
+            console.log('Tiempo de dormir');
+        } else {
+            console.log('Todavia aguantas');
+        }
+
+        let numeroManzanas = 0;
+        if (numeroManzanas){
+            console.log('Podemos comer manzanas');
+        } else {
+            console.log('Ya nos chingamos y no quedan manzanas');
+        }
+
+        let totalCarrito = 5;
+        let cashDisponible = 4;
+        if (totalCarrito <= cashDisponible){
+            console.log("Tienes lana para pagar y te sobra dinero");
+
+        } else if (totalCarrito > cashDisponible){
+            console.log('te falta dinero amigo');
+        }  
+
+        let rol = 'ADMIN';
+        
+        if (rol == 'ADMIN'){
+            console.log('el usuario puede editar, eliminar y ver toda la información');
+        } else if (rol == 'EDITOR'){
+            console.log('El usuario puede editar todos los registros');
+        } else if (rol == 'AUTOR') {
+            console.log('El usuario solo puede registrar usuarios');
+        } else {
+            console.log('El usuario es visitante, solo puede ver la información.');
+        }
+        
+        //El problema del else if es que si agregas multiples llegan a ser dificiles de leer.
+        //TAmbien se podría hacer lo siguiente:
+
+        switch (rol){
+            case 'ADMIN' :
+            console.log('el usuario puede editar, eliminar y ver toda la información');
+        } 
+
+
+
+        
+    </script>
+    
+</body>
+</html>
