@@ -176,6 +176,164 @@
             console.log('el usuario puede editar, eliminar y ver toda la información');
         } 
 
+        let username = '';
+        let defaultName;
+
+        if (username) {
+            defaultName = username;
+        } else {
+            defaultName = 'Invitado';
+        }
+        console.log(defaultName);
+
+        let nombreUsuario = '';
+        let defectoNombre = nombreUsuario || 'Usuario';
+        console.log(nombreUsuario);
+
+        let musica = '';
+        musica = 'clásica';
+        let musicaBuena = musica || 'rock';
+        console.log(`La mejor música es el ${musicaBuena} en el planeta!! `);
+
+        let pintor = '';
+        pintor = 'Pablo Picasso';
+        let mejorPintor = pintor || 'Salvador Dali';
+        console.log(`Uno de los mejores pintores del planeta fue ${mejorPintor} con su estilo inigualable`);
+
+        let isNightTime = false;
+        
+        if (isNightTime){
+            console.log('Turn on the lights!');
+        } else {
+            console.log('Turn off the lights!');
+        }
+
+        //operador ternario
+        let esDeNoche = true;
+
+        esDeNoche ? console.log('enciende luces') : console.log('Apaga luces')
+
+        let siLlueve = true;
+
+        siLlueve ? console.log('Se mojan las calles') : console.log('las calles estan secas');
+
+        let siEstudio = false;
+
+        siEstudio ? console.log('Pasaré el curso bien') : console.log('no pasaré el curso');
+
+        let fraseFavorita = 'Me encanta!';
+
+        fraseFavorita === 'Me encanta!' ? console.log('sabes escribir bien') : console.log('no sabes escribir');
+        
+        let stopLight = 'green';
+
+        if (stopLight === 'red') {
+            console.log('stop');
+        } else if (stopLight === 'yellow') {
+            console.log('Slow down');
+        } else if (stopLight === 'green') {
+            console.log('Go!');
+        } else {
+            console.log('Caution, unkown');
+        }
+
+        //The switch keyword
+
+        // let groceryItem = 'patata';
+        // if (groceryItem === 'tomato'){
+        //     console.log('Tomatoes are $0.49')
+        // } else if (groceryItem === 'papaya'){
+        //     console.log('Papayas are $1.29');0
+        // } else {
+        //     console.log('Invalid item');
+        // }
+
+        let groceryItem = 'avocado';
+        
+        switch (groceryItem) {
+            case 'tomato':
+                console.log('Tomatoes are $0.49');
+                break;
+            case 'lime':
+                console.log('lime are $10.98');
+                break;
+            case 'papaya':
+                console.log('Papayas are $7.79');
+                break;
+            case 'lettuce':
+                console.log('lettuce are $8.12');
+                break;
+            case 'avocado':
+                console.log('avocados are $15.40');
+                break;
+            default:
+                console.log('invalid Item');
+        }
+
+        let coloresPrimarios = 'purpura'
+
+        switch (coloresPrimarios) {
+            case 'rojo':
+                console.log('Esto si es un color primario');
+                break;
+            case 'azul':
+                console.log('Esto también es un color primario');
+                break;
+            case 'verde':
+                console.log('Esto si es un color primario y además el color de la ecologia.');
+                break;
+            case 'cyan':
+                console.log('Esto es un color primario pero de pintura');
+                break;
+            default:
+                console.log('Esto no es primario, es terciario u otra cosa');
+                break;
+        }
+
+        let userName = '';
+        
+        userName ? console.log(`Hello, ${userName}`) : console.log('Hello!');
+        const userQuestion = 'Will I become a werewolf tonight ?';
+        console.log(`El usuario pregunto: ${userQuestion}`);
+
+        const randomNumber = Math.floor(Math.random() * 8);
+        let eightBall = '';
+        switch (randomNumber) {
+            case 0 :
+            console.log('Tendrás novia nueva');
+                break;
+            case 1 :
+            console.log('Hoy no será un buen dia');
+                break;
+            case 2 :
+            console.log('Te encontrarás dinero en la calle');
+                break;
+            case 3 :
+            console.log('Una noticia impactante en tu vida te dirán.');
+                break;
+            case 4 :
+            console.log('Comerás tu comida favorita');
+                break;
+            case 5 :
+            console.log('No creo que se cumpla ese deseo');
+                break;
+            case 6 :
+            console.log('Por fin esa nueva oportunidad se te concede.');
+                break;
+            case 7 :
+            console.log('Corren nuevos tiempos, ponte a salvo.');
+                break;
+            case 8 :
+            console.log('Un viaje en el horizonte te espera.');
+                break;
+        }
+        
+        for (var i = 1; i<=10; i++){
+            console.log(i);
+        }
+
+
+
 
 
         
