@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let asterisco = '*';
+        // for (i=0; i>6; i++);
+        // document.write(asterisco)
+        
+        //funcion factorial con while.
+
+        // var num = prompt('inserta un valor');
+        // var factorial = 1;
+        
+        // while (num > 1){
+        //     factorial = factorial*num
+        //     num--;
+        //     console.log(factorial);
+        // }
+
+        // let i= 0;
+
+        // do{
+        //     document.write(i +'<br>');
+        //     i++;
+        // }
+
+        // while(1 < 5);
+
+        let secretNumber = Math.floor(Math.random() * 10);
+        // console.log(secretNumber);
+        let userNumber ;
+        // alert(secretNumber);
+        do{
+            userNumber = parseInt(prompt('Intenta adivinar el número entre 1 - 10'));
+                        
+            document.write(userNumber);            
+        } while (userNumber != secretNumber);
+
+
+
+    </script>
+</body>
+</html>
