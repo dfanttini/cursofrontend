@@ -33,22 +33,67 @@
         // let yoSoy = 'I\'m = I am';
         // let tuEres = 'You\'re = You are';
         // window.alert(yoSoy + '\n' + tuEres);
+
+        //pedir un numero y verificar si es o no e imrimirlo en una ventana
+            
+        //     let num = window.prompt("Inserta un pinche dato por favor."); 
         
-        let num = window.prompt("Inserta un pinche dato por favor."); 
-    
-       if (!isNaN(num) && num != null && num != ""){
-           window.alert('es numero');
-           
-       } else {
-           window.alert('no es un numero');
-           
-       }
+        //    if (!isNaN(num) && num != null && num != ""){
+        //        window.alert('es numero');
+            
+        //    } else {
+        //        window.alert('no es un numero');
+            
+        //    }
+        
+        // let num3 = window.prompt('inserta el primer número');
+        // let num4 = window.prompt('ahora inserta el segundo');
+
+        // if (num3 > num4){
+        //     window.alert('el primer número es mayor')
+        // } else if (num3 < num4){
+        //     window.alert('el segundo número es más grande')
+        // } else {
+        //     window.alert('son iguales o me ves la cara de guey')
+        // }
+        
+        //hacer un calculo de IMC
+
+        // let peso = window.prompt('inserta tu peso en kilos');
+        // let altura = window.prompt('ahora pon tu altura en centimetros')
+        // alturaMetros = (altura / 100);
+        // let imc = (peso/Math.pow(alturaMetros,2));
+        // window.alert('tu imc es de: ' + imc);
+        
+        //uso de typeof que devuelve number y console.log normal que devuelve el numero en nmero
+
+        // var a = 17e3;
+        // console.log(a);
+        // console.log(typeof a)
+        
+        // let ejemplo = 9;
+        // let redondear = Math.sqrt(ejemplo);
 
 
-       
+        
+        // // console.log(redondear);
+        // let requiredNumber = window.prompt("Inserta un numero y te diré si es par o non");
+        // if (requiredNumber % 2 === 0){
+        //     window.alert('Tu número es par')
+        // } else {
+        //     window.alert('Tu número es non')
+        // }
+        
 
-
-
+        let first_number = parseInt(prompt('Inserta el primer numero'));
+        let second_number = parseInt(prompt('Inserta el segundo numero'))
+        
+        let min_number = Math.min(first_number, second_number);
+        let max_number = Math.max(first_number, second_number);
+        random_number = Math.floor(Math.random() * (max_number - min_number) + min_number);
+        window.alert(' La manera más eficiente de hacer este ejercicio: \n Primero se insertó el siguiente numero = ' + min_number + '\n Despues se inserto el segundo= ' + max_number + '\n El numero aleatorio resultante fue= ' + random_number);
+        
+        
 
     </script>
 </body>
