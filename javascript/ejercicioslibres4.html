@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let resultado;
+        //esto es utilizando Math.pi
+        resultado = Math.PI;
+        document.write('Pi ' + resultado + ' esto es usando Math.Pi ' + '<br><br>');
+        
+        //Esto es redondeando
+        resultado = Math.round(8.3987);
+        document.write('Redondeado ' + resultado + ' esto es usando Math.round' + '<br><br>' )
+        
+        resultado = Math.ceil(17.3987);
+        resultado = Math.floor(235.3987);
+        document.write('Utilizando ceil o floor ' + resultado + ' esto es usando Math.ceil o floor' + '<br><br>' )
+
+        //Utilizando la funcion raiz cuadrada
+        resultado = Math.sqrt(16);
+        document.write('Raiz cuadrada ' + resultado + ' esto es usando Math.sqrt' + '<br><br>' );
+        
+        //Buscando absoluto
+        resultado = Math.abs(-100);
+        document.write('Absoluto ' + resultado + ' esto es usando Math.abs' + '<br><br>' );
+        
+        //Usando potencia
+        resultado = Math.pow(9,4);
+        document.write('Potencia ' + resultado + ' esto es usando Math.pow' + '<br><br>');
+        
+        //buscando el maximo de una serie de numeros
+        resultado = Math.max(8, 12, 156, 3, 7, 1, 4578, 2);
+        document.write('Máximo ' + resultado + ' esto es usando Math.max' + '<br><br>');
+        
+        //buscando el minimo de una serie de numeros
+        resultado = Math.min(8, 12, 156, 3, 7, 1, 4578, 2);
+        document.write('Mínimo ' + resultado + ' esto es usando Math.min' + '<br><br>');
+        
+        //numero random
+        resultado = Math.random();
+        document.write('Random ' + resultado + ' esto es usando Math.random' + '<br><br>');
+
+        //numero random dentro de un rango        
+        resultado = Math.floor(Math.random() * 123);
+        document.write('Random dentro de un rango ' + resultado + ' esto es usando Math.floor Math.random' + '<br><br>' );
+
+
+    </script>
+    
+</body>
+</html>

@@ -45,24 +45,38 @@
             
         // }
         
-        raceNumber = Math.floor(Math.random() * 1000);
-        let early = true;
-        let age = 21;
+        // raceNumber = Math.floor(Math.random() * 1000);
+        // let early = true;
+        // let age = 21;
         
-        if (early && age > 18){
-            raceNumber += 1000;
-        }
-        if (early && age > 18){
-            console.log(`The race will begin at 9:30 am and your racenumber is: ${raceNumber}.`);
-        } else if (!early && age > 18){
-            console.log(`The race will begin at 11:00 am and your racenumber is: ${raceNumber}.`);
-        } else if (age < 18){
-            console.log(`Race will begin at 12:30, your race number is: ${raceNumber}.`);
-        } else{
-            console.log('Please approach to the registration desk.');
-        }
+        // if (early && age > 18){
+        //     raceNumber += 1000;
+        // }
+        // if (early && age > 18){
+        //     console.log(`The race will begin at 9:30 am and your racenumber is: ${raceNumber}.`);
+        // } else if (!early && age > 18){
+        //     console.log(`The race will begin at 11:00 am and your racenumber is: ${raceNumber}.`);
+        // } else if (age < 18){
+        //     console.log(`Race will begin at 12:30, your race number is: ${raceNumber}.`);
+        // } else{
+        //     console.log('Please approach to the registration desk.');
+        // }
 
-        
+        let dato1, dato2, num1, num2;
+
+        dato1 = prompt("introduce un numero","0");
+        num1 = parseInt(dato1);
+        dato2 = prompt("introduce otro numero","0");
+        num2 = parseInt(dato2);
+      
+
+        let resultado = num1 - num2;
+
+        document.write(`<br/><br/> El resultado de ${num1} menos ${num2} es ${resultado}`);
+
+        let resultado2 = num1 * num2;
+
+        document.write(`<br/><br/> La multiplicación de ambos números seria ${resultado2}`)
 
     </script>
 </body>

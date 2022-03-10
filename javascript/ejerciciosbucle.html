@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="central"></p>
+    <script>
+
+            // let cadena = '', i;
+
+            // for(i=0; i < 5; i++);
+            // {
+            //     cadena = cadena + `El numero es ${i} <br />`;
+            // }
+            // document.getElementById("central").innerHTML= cadena;
+            
+            //decrecer un numero en lista
+            // for (x = 20; x > 0; x--)
+            // {
+            //     for (j = x; j >= 2; j--)
+            //     document.write(+j + ', ');
+            //     document.write('</br>');
+            // }
+
+            // let i,j;
+            // let x = "<table>";
+
+            // for (i = 1; i <= 10; i++) //aqui estoy creando 10 filas
+            // { 
+            //     x = x + "<tr>";
+
+            //     for (j = 1; j <= i; j++) //Aqui estoy indicando los numeros en cada fila.
+            //     x = x + `<td> El número es ${i}</td>`;
+
+            //     x = x + "</tr>";
+            
+            // }
+
+            // x = x + "</table>";
+            // document.getElementById("central").innerHTML= x;
+
+            // let fila;
+            // let columna = parseInt(prompt('Introduce el tamaño' , '0'));
+
+            // for (fila = 1; fila <= columna; fila++){
+            //     for (espacios = columna - fila; espacios > 0; espacios--)
+            //     document.write("&nbsp&nbsp");
+
+            //     for (conta = 1; conta < (2 * fila); conta++)
+            //     document.write("*")
+
+            //     document.writeln("</br>")
+
+                
+            // }
+
+            //Inicializacion de la variable contador
+            // i = 0;
+            // //condicion mientras la variable sea menor a 8
+            // while (i < 10 ){
+            //     document.write(' valor de i: ', i + '</br>'); 
+
+            //     i= i + 2; //incrementamos el valor de i
+            // }
+            
+            //ejercicios de titulo automatico con bucle
+
+            // function funcionUno(){
+            //     let result="";
+            //     let i;
+
+            //     for(i = 1; i <=6; i++)
+            //     {
+            //         result = result + `<h${i}>Titulo ${i} </h>`;
+
+            //     }
+
+            //     document.getElementById("central").innerHTML= result;
+            // }
+
+            let dato, resultado;
+            
+            dato = window.prompt("Introduce tu nombre" , "0");
+            resultado = `Hola como estas ${dato}, qué tal tu día?`;
+
+            document.write(resultado);
+            
+
+    </script>
+    <p>Pulsa el boton y se crean html tags de la 1 a la 6</p>
+    <button onclick="funcionUno()">Pulsa aqui</button>
+    <div id="central"></div>
+</body>
+</html>
