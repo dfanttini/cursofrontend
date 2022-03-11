@@ -15,19 +15,23 @@
 
 function buy(id) {
     productBuy = products.find(function(element){
-        if (element.id == id){ 
+        if (element.id== id){ 
             return element;
      }
-
+     cartList.push(productBuy);
 })
 
-}
+};
+
+
+// console.log(cartList);
+
+
+//funcion limpiar el carrito
+
+// function cleanCart(){
+//     console.log(cartList.length)
+// }
 
 
 
-
-
-
-
-// cartList.push(productBuy);
-// console.table(cartList);

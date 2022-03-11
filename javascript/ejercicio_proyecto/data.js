@@ -56,9 +56,9 @@ var products = [
 ]
 
 // Array de la llista de la compra
-var cartList = [];
-
 var cart = [];
+
+var cartList = [];
 
 var subtotal = {
     grocery: {
