@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="primer">Prueba número 1</button>
+    <button id="segundo">Prueba número 2</button>
+    <p id="demo1">Este texto es de prueba 1</p>
+    <p id="demo2">Este texto es de prueba 1</p>
+    <p id="demo3">Este texto es de prueba 1</p>
+
+    <aside>
+      <h3>My Card</h3>
+      <p>Double click to resize this object.</p>
+    </aside>
+
+    <script>
+      var primerElemento = document.getElementById("primer");
+      function showMessage() {
+        alert("primera función del botón");
+      }
+      primerElemento.addEventListener("click", showMessage);
+
+      var segundoElemento = document.getElementById("segundo");
+      function showMessage2() {
+        alert("Segunda función del botón");
+      }
+      segundoElemento.addEventListener("click", showMessage2);
+
+      //buscar eventos de ratón
+
+      //var tercerElemento = document.getElementById('demo1');
+
+      document.getElementById("demo1").addEventListener("mousedown", mouseDown);
+      document.getElementById("demo1").addEventListener("mouseup", mouseup);
+
+      function mouseDown() {
+        document.getElementById("demo1").innerHTML = "Has apretao el testo!!";
+      }
+      function mouseup() {
+        document.getElementById("demo1").innerHTML = "Lo has soltado dios mio";
+      }
+
+    //   document.getElementById("demo2").addEventListener();
+
+      const card = document.querySelector("aside");
+
+      card.addEventListener("dblclick", function (e) {
+        card.classList.toggle("large");
+      });
+    </script>
+  </body>
+</html>

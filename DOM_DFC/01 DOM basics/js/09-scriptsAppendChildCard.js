@@ -18,6 +18,7 @@ parrafo1.textContent = 'Concierto';
 parrafo1.classList.add('categoria');
 parrafo1.classList.add('concierto');
 
+
 // 2) <p class="titulo">Concierto de Rock</p>
 const parrafo2 = document.createElement('P');
 parrafo2.textContent = 'Concierto de Rock';
