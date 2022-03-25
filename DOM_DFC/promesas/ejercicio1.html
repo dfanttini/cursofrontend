@@ -8,68 +8,81 @@
   </head>
   <body>
     <script>
-      const calcula = new Promise(function(resolve, reject)
-      {setTimeout(function() {
+      const calcula = new Promise(function (resolve, reject) {
+        setTimeout(function () {
           const sum = 4 + 5;
-      if (isNaN(sum)) {
-          reject('Error de calculo');  }
-          else {
-              resolve(sum);
+          if (isNaN(sum)) {
+            reject("Error de calculo");
+          } else {
+            resolve(sum);
           }
+        }, 2000);
+      });
 
-
-      }, 2000
-          ); });
-
-
-      calcula.then(function(result) {
-          console.log(result);
-      } );
-
-
+      calcula.then(function (result) {
+        console.log(result);
+      });
 
       const paises = [];
 
-      const nuevoPais = pais => new Promise ( resolve =>{
-          setTimeout( ()=>{
-              paises.push(pais);
-              resolve(`Agregado: ${pais}`)
+      const nuevoPais = (pais) =>
+        new Promise((resolve) => {
+          setTimeout(() => {
+            paises.push(pais);
+            resolve(`Agregado: ${pais}`);
           }, 3000);
-      })
+        });
 
-    //   nuevoPais("Alemania").then(function(result){
-    //   console.log(result);
-    //   }).catch(function(error));
+      //   nuevoPais("Alemania").then(function(result){
+      //   console.log(result);
+      //   }).catch(function(error));
 
-    //   {console.log('Error')
-    //   };
+      //   {console.log('Error')
+      //   };
 
-    nuevoPais('Alemania')
-    .then (resultado => {
-        console.log(resultado);
-        console.log(paises);
-        return nuevoPais('Francia');
-    })
-    .then (resultado => {
-        console.log(resultado);
-        console.log(paises);
-        return nuevoPais('Inglaterra');
-    })
-    .then (resultado => {
-        console.log(resultado);
-        console.log(paises);
-        return nuevoPai();
+      nuevoPais("Alemania")
+        .then((resultado) => {
+          console.log(resultado);
+          console.log(paises);
+          return nuevoPais("Francia");
+        })
+        .then((resultado) => {
+          console.log(resultado);
+          console.log(paises);
+          return nuevoPais("Inglaterra");
+        })
+        .then((resultado) => {
+          console.log(resultado);
+          console.log(paises);
+          return nuevoPai();
+        })
 
-    })
+        .then((resultado) => {
+          console.log(resultado);
+          console.log(paises);
+        })
+        .catch((error) => {
+          console.log("Ha habido un error no controlado " + error);
+        });
 
-    .then (resultado => {
-        console.log(resultado);
-        console.log(paises)
-    
-    }).catch ( error => {
-        console.log("Ha habido un error no controlado " + error);
-    })
+      function calculDescuento() {
+        console.log("Aplicando descuento...");
+        return false;
+      }
 
+      const aplicarDescuento = new Promise((resolve, reject) => {
+        if (calculDescuento()) {
+          resolve("Descuento aplicado");
+        } else {
+          reject("No se pudo aplicar el descuento");
+        }
+      });
+
+      aplicarDescuento
+      .then(function(result) {
+          console.log(result);
+          console.log(calculDescuento());
+      }).catch
     </script>
   </body>
 </html>
