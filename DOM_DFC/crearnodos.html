@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+      
+      <section id="seccion3">               
+    </section>
+     
+    <script>
+        
+        //Añadiendo nodos
+
+        var nuevoH1 = document.createElement('h1');
+        var nuevoParrafo3 = document.createElement('p');
+
+        //crear nodos. Los elementos tienen nodos. Para ello creamos los nodos.
+
+        var textoH1 = document.createTextNode('Esto es el texto nuevo creado h1');
+        var textoParrafo = document.createTextNode('Esto es el texto del parrafo nuevo');
+
+        //añadir nodos al elemento
+
+        nuevoH1.appendChild(textoH1);
+        nuevoParrafo3.appendChild(textoParrafo);
+
+        //los elementos estan listos para añadirlos al Dom, no serán visibles hasta que los añadamos a un elemento del DOM
+
+        //seleccionamos un elemento
+
+        var cabecera3 = document.getElementById('seccion3')
+
+        //añado elementos hijos a un elemento
+
+        cabecera3.appendChild(nuevoH1);
+        cabecera3.appendChild(nuevoParrafo3);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio sexto</title>
 </head>
+
 <body>
     <script>
-        let a=+prompt "cual es tu altura en centimetros" ;
-        parseInt "a" ;
-        let b=+prompt "Cual es tu peso" ;
-        parseInt "b" ;
-        var imc=b
+        let altura = +prompt('pon tu altura en centimetros');
+        let peso = +prompt('ahora tu peso en kilogramos');
 
+        window.alert('Tu IMC seria el siguiente: ' + Math.round(peso / Math.pow(altura / 100, 2)));
+
+        /* 7. Considerant la següent assignació:
+              let x = "total" * 3 ; 
+              obté per consola total20
+          */
+        let x = "total" + Math.round(6.67 * 3);
+
+        console.log(x)
+
+
+        resultado = Math.floor(Math.random() * 100);
+        document.write('este es un numero aleatorio entre 1 y 100 =  ' + resultado);x
 
     </script>
-    
+
 </body>
+
 </html>

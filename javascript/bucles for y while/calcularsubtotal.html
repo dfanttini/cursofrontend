@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 0; i < cartList.length; i++) {
+            switch (cartList[i].type) {
+                case "grocery":
+                    subtotal.grocery.value += cartList[i].price;
+                    break;
+                case "grocery":
+                    subtotal.beauty.value += cartList[i].price;
+                    break;
+                case "grocery":
+                    subtotal.clothes.value += cartList[i].price;
+                    break;
+                default:
+                    console.log('hi ha un problema');
+            }
+        }
+
+        //para hacerlo dinamico y no tener que poner cada categoria a cada rato debemos de hacerlo dinamico con objecst keys.
+        //
+
+        for (var i = 0; i < cartList.length; i++) {
+            // El segon recorre tots els tipus
+            for (var j = 0; j < tipus.length; j++) {
+                if (cartList[i].type == tipus[j]) {
+                    var total2 = subtotal[tipus[j]].value + cartList[i].price;
+                    subtotal[tipus[j]].value = parseFloat(total2.toFixed(2));
+                }
+            }
+        }
+        //var tipus = Object.keys(subtotal);
+
+
+        for (var i = 0; i < cartList.length; i++) {
+            // El segon recorre tots els tipus
+            tipus.forEach(element => {
+                //Si el tipus del producte de la cistella, és la mateixa que la del tipus, aleshores sumem
+                // OJO toFixed retorna string .. per aixo abans de tornar a sumar hem de passar a float.
+                if (cartList[i].type == element) {
+                    var total2 = subtotal[element].value + cartList[i].price;
+                    subtotal[element].value = parseFloat(total2.toFixed(2));
+                }
+            });
+         } //revisar
+    </script>
+</body>
+
+</html>

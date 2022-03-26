@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        // let producto = '     monitor   21212  20   pulgadas     ';
+        // console.log(producto.trimStart());
+        // console.log(producto.trimEnd());
+     
+        // console.log(producto.length)
+        // console.log(producto.trim().length);
+
+        //ejercicio de reemplazar
+
+        let descProducto = 'Monitor de 20 pulgadas';
+        console.log(descProducto);
+        console.log('***vamos a reemplazar 20  x 40***');
+
+        descProducto = descProducto.replace('20', '40');
+        console.log(descProducto);
+
+        descProducto = descProducto.replace ('pulgadas', 'inches');
+        console.log(descProducto);
+
+        descProducto = descProducto.replace('de', '\n');
+        window.alert(descProducto);
+
+        //Slice nos va a permitir extraer una parte de una cadena.
+        //primero debemos saber en que posición encontramos la cadena.
+
+        console.log('ahora voy a utilizar slice pero primero encuentro la posicion en la cadena');
+
+        posicionNumero = descProducto.indexOf('40 ');
+        console.log('la posición del numero en la cadena es: ' + posicionNumero);
+
+        let oracion = 'esto es una oracion muy larga para saber en que lugar puede encontra el sistema un dato dado asi que espero sirva para algo.';
+        posicionOracion = oracion.indexOf('dato');
+        console.log('la palabra dato se encuentra en la siguiente posición: ' + posicionOracion);
+
+        let lema = 'no debe de haber guerra entre mas de 2 paises o 2 instituciones o 2 personas porque los 2 acaban perdiendo';
+        console.log(lema);
+        posicionInicio = lema.indexOf('2');
+        console.log('la posición de inicio en el texto es la siguiente: ' + posicionInicio);
+        posicionFinal = lema.indexOf('porque');
+        console.log('la posición final del texto es esta otra: ' + posicionFinal);
+        recortado = lema.slice(posicionInicio,posicionFinal);
+        console.log(recortado);
+
+        let primerTexto = 'este texto va a ser recortado porque estoy practicando como hacer lo del slice';
+        console.log(primerTexto);
+        posIni = primerTexto.indexOf('ser');
+        posFin = primerTexto.indexOf('como');
+        resultadoOracion = primerTexto.slice(posIni,posFin);
+        console.log(resultadoOracion);
+        cortarPornumero = primerTexto.slice(8,23);//cuando sabemos la posición ponemos el número.
+        console.log(cortarPornumero);
+
+        //ahora voy a utilizar charAt
+
+        let miNombre = "Dorian";
+        console.log(miNombre.substring(3,1));
+        console.log(miNombre.charAt(2));
+        console.log("*******\n\n");
+
+        
+
+
+
+
+
+
+        
+;
+
+        
+    </script>
+    
+</body>
+</html>

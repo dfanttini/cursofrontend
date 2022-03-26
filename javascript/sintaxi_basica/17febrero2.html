@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let frase = prompt('Escriba una oración: ');
+        // document.write(frase + '<br><br>');
+        // let palabra = prompt('Ingrese una palabra a buscar');
+        // document.write(palabra + '<br><br>');
+        // var dondeEsta= frase.indexOf(palabra);
+        // document.write("esta palabra se encuentra en  " + dondeEsta );
+       
+        const actividad = 'vamos a ver como separa este texto';
+        var separaActivida = actividad.split(" ");
+        console.log(separaActivida);
+
+        const hobbies = 'leer, caminar, correr, cine, comer, cocinar';
+        var sepHobbies = hobbies.split('r');//me devuelve los valores separados sin el valor pedido.
+        console.log(sepHobbies);
+
+        const comidaFav = 'tacos-tortas-carne-arroz-queso-olivas';
+        var sepComida = comidaFav.split('-');
+        console.log(sepComida);
+
+        let frase = prompt('Escribe una frase por favor');
+        document.write(frase + '<br><br>');
+
+        let palabraIngresada = prompt('Ingresa una palabra de búsqueda');
+        document.write(palabraIngresada + '<br><br>' );
+
+        var encontrarPalabra = frase.indexOf(palabraIngresada);
+        document.write('El resultado de la busqueda: ' + encontrarPalabra + '<br><br>');
+
+        //primera forma de encontrar en un string una palabra y mostrarlo por pantalla
+        // if (encontrarPalabra == -1){
+        //     document.write('palabra no encontrada')
+        // } else {
+        //     document.write(' que suerte!, encontramos la palabra');
+        // }
+
+        //segunda opcion de como enctrar un string,con la negación en el if
+
+        if (encontrarPalabra != -1){
+            document.write('la frase ingresada contiene la palabra: ' + palabraIngresada + ' a partir de la posición ' + encontrarPalabra);
+
+        } else {
+            document.write('la frase ingresada no contiene la palabra:' + palabraIngresada);
+        }
+        
+
+</script>
+
+</body>
+</html>

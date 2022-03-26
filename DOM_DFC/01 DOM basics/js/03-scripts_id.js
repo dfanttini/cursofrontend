@@ -5,10 +5,10 @@
 •	Mostra l’element footer ( id = footer )  */
 
 
-console.log("------ form ------------");
-const formulario = document.getElementById('formulario');
-console.log(formulario);
+// console.log("------ form ------------");
+// const formulario = document.getElementById('formulario');
+// console.log(formulario);
 
-console.log("------ footer ------------");
-const footer = document.getElementById('footer');
-console.log(footer);
+// console.log("------ footer ------------");
+// const footer = document.getElementById('footer');
+// console.log(footer);

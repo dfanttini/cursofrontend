@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // //arrays
+
+        // const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio'];
+        // const numeros = [10, 20, 30, 40, 50, 60];
+        // const dia1 = {
+        //     nombre: 'lunes',
+        // }
+
+        // const dia2 = {
+        //     nombre: 'martes',
+        // }
+
+        // const year = (2022);
+
+
+
+        // console.log(numeros, meses);
+        // console.log(meses[2]);
+        // console.log(numeros[3]);
+        // console.log(numeros[2], meses[2]);
+        // console.log(meses[2], numeros[2]);
+
+        // console.log(numeros.length);
+        // console.log(meses.length);
+
+        // meses.push(dia1);
+        // meses.push(dia2);
+
+        // console.log(meses.length);
+
+        // console.log(meses);
+
+        // for (let i = 0; i < meses.length; i++) {
+        //     console.log(meses[i]);
+        // }
+
+        // meses.unshift(year);
+
+        // console.log(meses);
+
+        // meses.pop(dia2);
+        // meses.shift();
+
+
+        // console.log(meses);
+
+        // meses.pop();
+
+        // console.log(meses);
+
+        // meses.splice(2, 1);
+
+        // console.log(meses);
+
+        // const carrito = [
+        //     { nombre: 'Monitor 20 Pulgadas', precio: 500 },
+        //     { nombre: 'Televisión 50 Pulgadas', precio: 700 },
+        //     { nombre: 'Tablet ', precio: 300 },
+        //     { nombre: 'Audifonos', precio: 200 },
+        //     { nombre: 'Teclado', precio: 50 },
+        //     { nombre: 'Celular', precio: 500 },
+        // ]
+
+        // for (let i = 0; i < carrito.length; i++) {
+        //     console.log("este articulo de la tienda " + carrito[i].nombre + " su precio es de " + carrito[i].precio);
+        // }
+
+
+        function saludar(nombre = "John Doe", edad = 25) {
+            document.write(`Hola mi nombre es ${nombre} y mi edad es ${edad} <br/>`);
+        };
+
+        saludar("Dorian", 47);
+        saludar("Elizabeth", 4)
+
+        function multiplyPorCincoQuintos(number) {
+            return number * (9 / 5);
+        }
+
+        function obtenerGradosFarenheit(celsius) {
+            return multiplyPorCincoQuintos(celsius) + 32;
+        }
+
+        const resultado = obtenerGradosFarenheit(15);
+        document.write(resultado);
+
+        const a = [false, 'hola', ['A', 'B', 'C'], [1, 2, 3, 4]];
+        console.log(a);
+        console.log(a[2][1])
+        console.log(a[3][3])
+
+        const b = Array.of('Day', 'Month', 'Year', 1, 2, 3);
+        console.log(b);
+
+        const productDesc = Array(20).fill('descuento 0%');
+        console.log(productDesc);
+        document.write(productDesc);
+
+        const coloresRGB = ['Rojo', 'Verde', 'Azul'];
+        console.log(coloresRGB);
+
+        coloresRGB.push('Negro');
+        console.log(coloresRGB);
+
+        coloresRGB.pop();
+        console.log(coloresRGB);
+
+        coloresRGB.forEach(function (el, index) {
+            console.log(`<li id="${index}">${el}</li>`)
+        });
+
+        const carrito = [{
+            nombre: 'Monitor 20 Pulgadas',
+            precio: 500
+        },
+        {
+            nombre: 'Televisión 50 Pulgadas',
+            precio: 700
+        },
+        {
+            nombre: 'Tablet',
+            precio: 300
+        },
+        {
+            nombre: 'Audifonos',
+            precio: 200
+        },
+        {
+            nombre: 'Teclado',
+            precio: 50
+        },
+        {
+            nombre: 'Celular',
+            precio: 500
+        },
+        {
+            nombre: 'Bocinas',
+            precio: 300
+        },
+        {
+            nombre: 'Laptop',
+            precio: 800
+        },];
+
+        for (let i= 0; i < length; i++){
+            if(carrito[i].precio > 300) {
+            console.log ( 'producte: ' + carrito[i].nombre + ' - Preu' + carrito[i].precio + '€')
+        }
+
+        }
+        
+        //ejemplo de funciones con un parámetro, ninguno o varios
+
+        const ceroParametro = () => {};
+        const unParametro = ParametroUno => {};
+        const dosParametros = (paramUno, paraDos) => { };
+
+        const noParam = () => {};
+        const oneParam = cuentas => {};
+        const twoParam  = (cuentas, pagos) => {};
+
+       const country = ' Espain';
+
+       const countryWhere = () => {
+           return country;
+       };
+
+       document.write(countryWhere());
+
+       var calificaciones = [6, 5, 2.4, 7, 3, 4.9, 9, 5.1]
+
+       var aprobados = calificaciones.filter (function (element){
+           return element >= 5;
+       });
+
+       console.table(aprobados);
+
+       var listadoNum = ['uno', 'tres', 'cinco', 'dos', 'veintidos']
+
+       var conteo = listadoNum.filter (function (element){
+           return element !== 'dos';
+       });
+
+       console.table(conteo);
+
+
+
+    </script>
+</body>
+
+</html>

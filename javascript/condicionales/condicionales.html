@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //escenari 1: El usuario no puede hacer la compra
+       //let usuarioDNI = false; 
+       //let puedePagar = false; 
+       //let usuariMajorEdat = false;
+
+       //escenari 2
+       //let usuarioDNI = true; 
+       //let puedePagar = true; 
+       //let usuariMajorEdat = true;
+
+       //escenari 3
+       //let usuarioDNI = false; 
+       //let puedePagar = false; 
+       //let usuariMajorEdat = false;
+
+        let usuarioDNI = false;
+        let puedePagar = true;
+        let usuariMajorEdat = true;
+
+        if (usuarioDNI == true && puedePagar == true && usuariMajorEdat == true){
+            document.write('Si tienes DNI, y eres mayor de edad');
+        } else if (puedePagar == false ){
+            document.write('Lo siento no puedes pagar porque eres pobre');
+        } else if (usuariMajorEdat == false ){
+            document.write('Lo siento no eres mayor de edad -niñato-!');
+        } else {
+            document.write('el usuario no es correcto');
+        }
+
+
+    </script>
+</body>
+</html>

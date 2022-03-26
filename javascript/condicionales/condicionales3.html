@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const minimCompra = 100;
+        let cash = 150;
+        let carrito = 100;
+
+        if (cash >= minimCompra && carrito >= minimCompra){
+            document.write('Si puedes llevarte lo que ordenaste a tu casa');
+        } else if(cash >= minimCompra && carrito <= minimCompra){
+            document.write('No estas comprando lo suficiente');
+        } else {
+            document.write('Te hace falta dinero maestro');
+        }
+
+
+        //recuerda en los ternarios escribes las condiciones con el simbolo de interrogación .
+
+        const consumoMinim = 30;
+        let monedero = 20;
+
+        let comida = 50;
+
+        document.write((monedero >= consumoMinim && comida >= consumoMinim) ? ' Puedes comer traquilo': 'Mejor comete un sandwich')
+
+
+        var nota = prompt('Pon la nota que te asignarias en el curso');
+        //en este caso el parametro de switch tiene que ser verdadero para que se compare numero con numero de otra forma no funciona.
+        switch (true){
+            case (nota >= 0 && nota < 3):
+            alert('Eres un burro');
+            break;
+            case (nota >= 3 && nota < 5):
+            alert('Es insuficiente');
+            break;
+            case (nota >= 5 && nota < 6):
+            alert('Es suficiente para pasar');
+            break;
+            case (nota >= 6 && nota < 7):
+            alert('Eres un burro');
+            break;
+            case (nota >= 7 && nota < 9):
+            alert('Notable');
+            break;
+            default:
+            alert('Excelente');
+            break;
+        }
+
+
+        let efectivo = 100;
+        let credito = 500;
+        let disponible = efectivo + credito;
+        let totalCompra = 550;
+
+        if (efectivo >= totalCompra || credito >= totalCompra){
+            document.write('Puedes realizar la compra de la tienda');
+        } else if (disponible >= totalCompra){
+            document.write('Adelante con el credito y el efectivo para la compra')
+        } else {
+            document.write('hace falta tener más lana');
+        }
+        
+    </script>
+</body>
+</html>

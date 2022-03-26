@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios libres</title>
+</head>
+
+<body>
+    <script>
+
+        const carrito = [{
+            nombre: 'Monitor 20 Pulgadas',
+            precio: 500,
+        },
+        {
+            nombre: 'Televisión 50 Pulgadas',
+            precio: 700,
+        },
+        {
+            nombre: 'Tablet',
+            precio: 300,
+        },
+        {
+            nombre: 'Audifonos',
+            precio: 200,
+        },
+        {
+            nombre: 'Teclado',
+            precio: 50,
+        },
+        {
+            nombre: 'Celular',
+            precio: 500,
+        },
+        {
+            nombre: 'Bocinas',
+            precio: 300,
+        },
+        {
+            nombre: 'Laptop',
+            precio: 800,
+        }];
+
+        
+        // for (let i = 0; i < carrito.length; i++){
+        //     if (carrito[i].precio > 299){
+        //         console.log ('producte: ' + carrito[i].nombre + ' - Preu ' + carrito[i].precio + ' €');
+        //     }
+        // }
+
+        // for (let i = 0; i < carrito.length; i++){
+        //     console.log(carrito[i].nombre);
+            
+        // }
+        
+        
+        const producto8 = {
+            nombre: 'Tijeras',
+            precio: 45,
+        }
+
+        const producto9 = {
+            nombre: 'Aceite de girasol',
+            precio: 3.75,
+        }
+
+        carrito.push(producto8);
+        carrito.push(producto9);
+
+        console.log(carrito.length);
+        
+        console.table(carrito);
+
+        const producto10 = {
+            nombre: 'Medias',
+            precio: 22,
+        }
+
+        carrito.unshift(producto10);
+
+        console.table(carrito);
+        carrito.shift();
+
+        console.table(carrito);
+
+        carrito.pop();
+
+        console.table(carrito);
+
+             for (let i = 0; i < carrito.length; i++){
+            if(carrito[i].precio > 299){
+                console.log('estos productos:  ' + carrito[i].nombre + ' coinciden con la variable de precio ' + carrito[i].precio + ' requerida.');
+            }
+        }
+
+        console.log(producto300);
+
+        //devolver metodo tostring
+
+
+
+    //     const carrito2 = [{
+    //         producto: 'Jabón',
+    //         descuento: 5,
+    //         precio: 12,
+    //     },
+    //     {
+    //         producto: 'Lejía',
+    //         descuento: 2,
+    //         precio: 2.5,
+    //     },
+    //     {
+    //         producto: 'Cerveza',
+    //         descuento: 1,
+    //         precio: 8,
+    //     },
+    //     {
+    //         producto: 'Pañales',
+    //         descuento: 0,
+    //         precio: 14,
+    //     },
+    //     {
+    //         producto: 'Carne',
+    //         descuento: 7,
+    //         precio: 25,
+    //     }];
+
+    //    for (let i = 0; i < carrito2.length; i++){
+    //         if(carrito2[i].descuento > 3){
+    //             console.table('los siguientes productos ' + carrito2[i].producto + ' tienen el siguiente descuento: ' + carrito2[i].descuento);
+    //         } 
+    //    }
+        
+    //    for (let i = 0; i < carrito2.length; i++) {
+    //        if (carrito2[i].precio < 4){
+    //            console.log('Los siguientes productos del almacen ' + carrito2[i].producto + ' tienen los siguientes precios: ' + carrito2[i].precio + ' y además el siguiente descuento ' + carrito2[i].descuento);
+    //        }
+    //    }
+
+       
+    </script>
+</body>
+
+</html>

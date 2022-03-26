@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //variable sencilla para saber si cumplimos un requisito dado.
+
+        let cashDisponible = 250;
+        let totalCarrito = 169;
+
+        if (cashDisponible >= totalCarrito) {
+            document.write('Tienes dinero para hacer la compra' + '<br><br>')
+        } else {
+            document.write('Te hacen falta fondos');
+        }
+
+
+        let dineroCartera = 189;
+        let compra = 190;
+
+        if (dineroCartera >= compra) {
+            document.write('Tienes dinero para la compra')
+        } else {
+            document.write('Te hacen falta fondos ' + '<br><br>');
+        }
+
+        //vamos a utilizar el switch
+
+        const rol = 'Admin';
+
+        switch (rol) {
+            case 'Admin':
+                document.write('Puedes editar, eliminar y escribir en los archivos' + '<br><br>');
+                break;
+            case 'Editor':
+                document.write('Solo puedes editar y escribir en los archivos' + '<br><br>' );
+                break;
+            case 'Autor':
+                document.write('Unicamente puedes escribir en los archivos' + '<br><br>');
+                break;
+            default:
+                document.write('Tu solamente puedes leer los archivos' + '<br><br>');
+                break;
+
+        }
+
+        
+        const rolOficina = 'Gerente';
+
+        switch (rolOficina) {
+            case 'Administrativo':
+                document.write('Tienes asegurado tu dinero a fin de mes' + '<br><br>');
+                break;
+            case 'Gerente':
+                document.write('Ganas más dinero que nadie' + '<br><br>');
+                break;
+            case 'Jefe':
+                document.write('Eres jefe y tienes subalternos' + '<br><br>');
+                break;
+            case 'Intendencia':
+                document.write('Sabes el cotilleo de toda la oficina' + '<br><br>');
+                break;
+            case 'Secretaria':
+                document.write('Varios te tienen como su crush platónico' + '<br><br>');
+                break;
+            case 'Mensajeria':
+                document.write('Todo mundo necesita de ti, sí o sí' + '<br><br>');
+                break;
+            default:
+                document.write('Eres becario y te aplicas esperando que en algún momento te contraten' + '<br><br>');
+                break;
+        }
+
+        const metodoPago = 'tarjeta';
+
+        switch(metodoPago){
+            case 'efectivo':
+                document.write(`Pagaste con ${metodoPago}, gracias por tu compra`);
+                break;
+            case 'tarjeta':
+                document.write(`pagaste con ${metodoPago}, primero revisaremos si tienes fondos`);
+                break;
+            case 'promocion':
+                document.write(`Pagaste con la ${metodoPago}, tomaremos esto en cuenta para el precio.`);
+                break;
+            default:
+                document.write('Aún no has pagado');
+                break;
+
+        }
+
+        
+    </script>
+</body>
+
+</html>

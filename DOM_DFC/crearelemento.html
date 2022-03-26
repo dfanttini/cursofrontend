@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+      <section id="seccion">
+        <h1>Esto es el texto de H1</h1>
+        <p>Esto es el primer parrafo original</p>
+    </section>
+      <section id="seccion2">
+        
+        
+    </section>
+      <section id="seccion3">               
+    </section>
+     
+    <script>
+        //creamos el elemento
+        var nuevoH4 = document.createElement('h4');
+        var nuevoParrafo = document.createElement('p');
+        //ponemos el texto dentro del elemento
+        nuevoH4.textContent = "Esto es el texto nuevo de h4";
+        nuevoParrafo.textContent = "Esto es el segundo parráfo, creado desde el script";
+        //seleccionamos un elemento
+        var cabecera = document.getElementById('seccion');
+        //añadimos  elementos hijos a un elemento
+        cabecera.appendChild(nuevoH4);
+        cabecera.appendChild(nuevoParrafo);
+
+        var nuevoH2 = document.createElement('h2');
+        var nuevoParrafo = document.createElement('p');
+
+        nuevoH2.textContent = "Esto es un h2";
+        nuevoParrafo.textContent = "Este seria el tercer parrafo";
+
+        var cabecera2 = document.getElementById('seccion2')
+
+        cabecera2.appendChild(nuevoH2);
+        cabecera2.appendChild(nuevoParrafo);
+        
+        //Añadiendo nodos
+
+        var nuevoH1 = document.createElement('h1');
+        var nuevoParrafo3 = document.createElement('p');
+
+        //crear nodos. Los elementos tienen nodos. Para ello creamos los nodos.
+
+        var textoH1 = document.createTextNode('Esto es el texto nuevo creado h1');
+        var textoParrafo = document.createTextNode('Esto es el texto del parrafo nuevo');
+
+        //los elementos estan en memoria, ahora los voy a añadir al DOM 
+        
+        //seleccionar elemento
+
+        var cabecera3 = document.getElementById('seccion3')
+
+        //añadir elementos hijos a un elemento
+        cabecera3.appendChild('nuevoH1');
+        cabecera3.appendChild('nuevoParrafo3');
+
+    </script>
+</body>
+
+</html>
