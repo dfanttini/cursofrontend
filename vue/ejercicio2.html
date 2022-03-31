@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Vue</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        
+    </div>
+    <template id="ejemplo2">
+        <div>
+            <div>
+                <h1><b>{{mensaje}}</b></h1>
+                <!--el split nos devuelve el array con todos los caracteres, reverse los pone al reves y join los junta-->
+                <span><b>{{ mensaje.split('').reverse().join('') }}</b></span>
+                <span v-html="mensajeHTML"></span>
+            </div>
+            <div>
+                <a v-bind:href="url" v-bind:alt="url"><img  v-bind:src="imagen"></a>
+            </div>
+            <div>
+                <!--sumamos 1 a la variable number-->
+                <span>{{ number + 1}}</span>
+                <!--mostramos el valor de la variable OK-->
+                <div><b><span>{{ ok ? 'YES': 'NO'}}</span></b></div>
+                
+                <button v-on:click="number ++">Incrementar</button>
+                <button v-on:click="number --">Decremento</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="/app2.js"></script>
+</body>
+</html>
