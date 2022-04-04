@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div style="text-align: center;" id="home">
+        
+            <!--REnderizando los datos al DOM-->
+            <h1 style="color:seagreen">{{title}} </h1>
+            <h2>Titulo: {{name}}</h2>
+            <h2>Topic: {{topic}}</h2>
+            <!--Llamando la funcion en los métodos-->
+            <h2>show sin parametro {{show ()}}</h2>
+            <h2>show con parametro {{showName ('Pepito')}}</h2>
+            <button @click="random()">Random</button>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    //creamos la instancia vue
+    var vm = new Vue({
+        el: '#home',
+        //asignando los valores del parámetro
+        data: {
+            title: 'Geeks for geeks',
+            name: "Vue,js",
+            topic: "Instances",
+
+        },
+        //Creando el método
+        methods: {
+            //creo la función
+            show: function () {
+                return "Bienvenido a este tutorial" +
+                this.name + " - " + this.topic;
+            },
+
+            showName: function (nombre) {
+                var varLocal ="Hola";
+                return "Welcome to this tutorial " + 
+                varLocal + " " + nombre + " " + this.name + " - " + this.topic
+            },
+
+            random: function (){
+                this.number = 0;
+            }
+        },
+    })
+
+    // vm.showName="Pepidto"
+</script>
+</html>

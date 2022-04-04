@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    <template id="ejemplo">
+        <div>
+            <div>
+                <h3>Ahora este ejercicio {{ejercicio}}</h3>
+            </div>
+            <div>
+                <a v-bind:href="url"><img src="imagen" alt=""></a>
+                
+            </div>
+            <div>
+                <button v-on:click="number ++">Aumentar</button>
+                <button v-on:click="number --">Disminuir</button>
+                <button @click="random()">Reset</button>
+                <span>{{number}}</span>
+                <b><span>{{ok ? 'YES': 'no'}}</span></b>
+                
+
+            </div>
+        </div>
+    </template>
+    <script>
+        const vm = new Vue({
+            el: "#app",
+            template: "#ejemplo",
+            data: {
+                ejercicio: " se trata de números",
+                number: 10,
+                ok: true,
+                imagen: "/img/vue.png",
+                url: "http://www.uoc.edu",
+            },
+            methods: {
+                random: function(){
+                    this.number= 0;
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>

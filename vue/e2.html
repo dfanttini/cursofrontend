@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+
+</head>
+<body>
+    <div id="app"></div>
+
+    <template id="ejemplo">
+        <div>
+            <div>
+               <h1>Este es un nuevo mensaje creado con Vue {{mensaje}}</h1> 
+            </div>
+            <div>
+               <p>Y esto es una imagen traida desde el template</p>   
+            </div>
+            <div>
+              <a v-bind:href="url"><img v-bind:src="imagen" alt=""></a>  
+            </div>
+            <div>
+                <h2>Esta otra imagen también la traigo de la misma manera {{mensaje}}</h2>
+            </div>
+            <div>
+                <a v-bind:href="url2"><img v-bind:src="imagen2" alt=""></a>
+            </div>
+        </div>
+        
+              
+        
+    </template>
+    
+    <script>
+        const vm = new Vue({
+            el: "#app",
+            template: "#ejemplo",
+            data: {
+                mensaje: "Boogie",
+                imagen: "/img/vue.png",
+                imagen2: "/img/google.jpg",
+                url: "http://www.uoc.edu",
+                url2: "http://www.google.es",
+            }
+        })
+
+    </script>
+</body>
+</html>
