@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+</head>
+<body>
+    <div id="databinding">
+        <div>
+            
+            <h2>Añade los números 100 + 200 = {{total}}</h2>
+            <p>Escribe el primer número</p>
+            <input type="number" v-model="num1">
+            <p>Escribe el segundo número</p>
+            <input type="number" v-model="num2">
+            <button @on:click="displaynumbers">suma</button>
+        </div>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el: "#databinding",
+            data: {
+                num1: '',
+                num2: '',
+                total: '',
+            },
+            
+            methods: {
+            displaynumbers : function (evento){
+                
+                console.log(evento);
+                return this.total = num1 + num2;
+            }
+        }
+        })
+
+        
+    </script>
+    
+</body>
+</html>

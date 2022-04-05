@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio goals</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="app">
+        <label for="goal">Anotaciones</label>
+        <input type="text" id="goal" v-model="enteredValue" v-on:keypress="enter">
+        <button v-on:click="addGoal">Añade anotación</button>
+        <button v-on:click="delGoal">Borra anotación</button>
+       <ol>
+           <li v-for="(item,key,index) in goal" @click="goalDone" @dbleclick="deshacer">{{item}}</li>
+       </ol>
+    </div>
+        
+    <script>
+        var vm = new Vue({
+        el: "#app",
+        data:{
+            goals: [],
+            enteredValue: ''
+        },
+        
+        methods: {
+            addGoal: function(){
+                this.goals.push(this.enteredValue);
+                this.enteredValue='';
+            },
+            delGoals: function(){
+                (this.goal=[]),(this.enteredValue="");
+            },
+            goalDone: function(u){
+                e.target.style.textDecoration= 'line-through'
+                e.target.style.background = 'grey';
+            },
+            enter: function(e){
+                if(e.key === 'Enter'){
+                    this.addGoal();
+                }
+            },
+            delTask: function(e){
+                let indice = this.goal.indexOf(e.target);
+                if(indice === -1){
+                    this.goal.splice(indice, 1)
+                }
+            }
+
+        }
+        })
+    </script>
+    
+</body>
+</html>
