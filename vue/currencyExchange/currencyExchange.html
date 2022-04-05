@@ -1,65 +1,137 @@
 <html>
-   <head>
-      <title>VueJs Instance</title>
-      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
-   </head>
-   <body>
-      <style>
-         #databinding{
-            padding: 20px 15px 15px 15px;
-            margin: 0 0 25px 0;
-            width: auto;
-            background-color: #e7e7e7;
-         }
-         span, option, input {
-            font-size:25px;
-         }
-      </style>
-      
-      <div id = "app" >
-         <h1>Benvinguda: {{name}}</h1> 
-         <h1>Currency Converter</h1>         
-         <span>Enter Amount:</span>
-         <input type ="number"  placeholder = "Enter Amount" /><br/><br/>
-         <span>Convert From:</span>
-         <select style="width:300px;font-size:25px;">
-            <option v-for="(elemento, index) in currencyfrom" :value="elemento.name" >{{elemento.name}} - {{elemento.desc}}</option>
-         </select>
-         <span>Convert To:</span>
-         <select style = "width:300px;font-size:25px;">
-            <option v-for="(elemento, index) in currencyfrom" :value="elemento.name" >{{elemento.name}} - {{elemento.desc}}</option>
-         </select><br/><br/>
-      </div>
-      <script>
-          var vm= new Vue({
-              el:'#app',
-              data: {
-                  name: 'Anna',
-                  currencyfrom: [
-                  {
-                     name:"USD",
-                     desc:"US Dollar"
-                  },
-                  {
-                     name:"EUR", 
-                     desc:"Euro"
-                  },
-                  {
-                     name:"INR",
-                     desc:"Indian Rupee"
-                  },
-                  {
-                     name:"BHD",
-                     desc:"Bahraini Dinar"
-                  }
-                  ]
-              },
-              
-              computed: {
+  <head>
+    <title>VueJs Instance</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  </head>
+  <body>
+    <style>
+      #databinding {
+        padding: 20px 15px 15px 15px;
+        margin: 0 0 25px 0;
+        width: auto;
+        background-color: #e7e7e7;
+      }
+      span,
+      option,
+      input {
+        font-size: 25px;
+      }
+    </style>
 
-              }
-          })
-      </script>
-      
-   </body>
+    <div id="app">
+      <h1>Benvinguda: {{name}}</h1>
+      <h1>Currency Converter</h1>
+      <span>Enter Amount:</span>
+      <input
+        type="number"
+        v-model="amount"
+        placeholder="Enter Amount"
+      /><br /><br />
+      <span>Convert From:</span>
+      <select v-model="convertFrom" style="width: 300px; font-size: 25px">
+        <option
+          v-for="(elemento, index) in currencyfrom"
+          :value="elemento.name"
+        >
+          {{elemento.desc}}
+        </option>
+      </select>
+      <span>Convert To:</span>
+      <select v-model="convertTo" style="width: 300px; font-size: 25px">
+        <option
+          v-for="(elemento, index) in currencyfrom"
+          :value="elemento.name"
+        >
+          {{elemento.desc}}
+        </option></select
+      ><br /><br />
+    <span>{{amount}} {{convertFrom}} equals {{convertTo}} {{finalamount}}</span>
+    </div>
+    <script>
+      var vm = new Vue({
+        el: "#app",
+        data: {
+          name: "Anna",
+          currencyfrom: [
+            {
+              name: "USD",
+              desc: "US Dollar",
+            },
+            {
+              name: "EUR",
+              desc: "Euro",
+            },
+            {
+              name: "INR",
+              desc: "Indian Rupee",
+            },
+            {
+              name: "BHD",
+              desc: "Bahraini Dinar",
+            },
+          ],
+          convertFrom: "USD",
+          convertTo: "INR",
+          amount: 1000,
+        },
+
+          computed: {
+            finalamount:function(){
+                var to = this.convertTo;
+                var from = this.convertFrom;
+                var final;
+                switch(from){
+                   case "INR":
+               if (to == "USD") {
+                   final = this.amount * 0.016;
+               }
+               if (to == "EUR") {
+                  final = this.amount * 0.013;
+               }
+               if (to == "BHD") {
+                  final == this.amount * 0.0059;
+               }
+               break;
+               case "USD":
+               if (to == "INR"){
+                  final = this.amount * 63.88;
+               }
+               if (to == "EUR"){
+                  final = this.amount * 0.84;
+               }
+               if (to == "BHD"){
+                  final = this.amount * 0.38;
+               }
+               break;
+               case "EUR":
+               if (to == "INR"){
+                  final = this.amount * 76.22;
+               }
+               if (to == "USD"){
+                  final = this.amount * 1.19;
+               }
+               if (to == "BHD"){
+                  final = this.amount * 0.45;
+               }
+               break;
+               case "BHD":
+               if (to == "INR"){
+                  final = this.amount * 169.44;
+               }
+               if (to == "USD"){
+                  final = this.amount * 2.65;
+               }
+               if (to == "EUR"){
+                  final = this.amount * 2.22;
+               }
+               
+
+                }
+                return final
+             }
+             
+          },
+      });
+    </script>
+  </body>
 </html>
