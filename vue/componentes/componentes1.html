@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+
+</head>
+<body>
+    <div id="my-app">   
+        <h1>{{name}}{{mensaje}}</h1>
+        <button @click="onAdd">{{count}} Boto objeto Vue</button>
+       
+        <p>Segundo boton hecho con un componente</p>
+        <my-button></my-button>
+        <my-button></my-button>
+        <user-detail first="test"></user-detail>
+    </div>
+    
+    <script src="/componentes/user-detail.js"></script>
+    <script src="/componentes/component.js"></script>
+    <script src="/componentes/app.js">{{firstname}}</script>
+    
+</body>
+</html>
