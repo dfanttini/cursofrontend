@@ -2,24 +2,24 @@
   "posts": [
     {
       "id": 1,
-      "title": "Producto 1",
-      "author": "typicode"
+      "title": "Raton",
+      "author": "Persona 1"
     },
     {
       "id": 2,
-      "title": "Producto 2",
-      "author": "typicode"
+      "title": "Zapatillas",
+      "author": "Persona 2"
     },
     {
       "id": 3,
-      "title": "Producto 3",
-      "author": "typicode"
+      "title": "Gel",
+      "author": "Persona 3"
     }
   ],
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
+      "body": "Ejemplo 1",
       "postId": 1
     },
     {
