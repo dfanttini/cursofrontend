@@ -1,0 +1,31 @@
+ [
+    {
+        "posts": [
+          { "id": 1, "title": "Ratón Gaming", "author": "typicode" }
+        ],
+        "comments": [
+          { "id": 1, "body": "Ratón profesional", "postId": 1 }
+        ],
+        "profile": { "name": "typicode" }
+      },
+      {
+        "posts": [
+          { "id": 2, "title": "Smartwatch", "author": "typicode" }
+        ],
+        "comments": [
+          { "id": 2, "body": "Reloj inteligente", "postId": 2 }
+        ],
+        "profile": { "name": "typicode" }
+      },
+      {
+        "posts": [
+          { "id": 3, "title": "Zapatillas deporte", "author": "typicode" }
+        ],
+        "comments": [
+          { "id": 3, "body": "Marca patito", "postId": 3 }
+        ],
+        "profile": { "name": "typicode" }
+      }
+]
+
+
